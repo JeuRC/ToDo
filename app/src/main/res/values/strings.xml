@@ -8,6 +8,35 @@
     <string name="my_image_description">ImagenIconoP</string>
     <string name="enter_name_hint">Username or Email</string>
     <string name="enter_contraseñap_hint">Password</string>
-
-
+    <string name="enter_login1">LOGIN</string>
+    <string name="not_account1">You do not have an account?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot your Password?</string>
+    <string name="or_p">Or</string>
+    <string name="button_login_facebook">LOGIN WITH FACEBOOK</string>
+    <string name="sign_facebook">Sign In With Facebook</string>
+    <string name="sign_Google">Sign In With Google</string>
+    <string name="button_login_google">LOGIN WITH GOOGLE</string>
+    <string name="continue_name">Continue as Name</string>
+    <string name="loginapp_profile">LoginApp will receive your public profile</string>
+    <string name="learn_more">Learn More</string>
+    <string name="continue_facebook">Continue</string>
+    <string name="do_facebook">This doesn\'t let the app post to Facebook</string>
+    <string name="conex_facebook">Conexion Facebook</string>
+    <string name="candado_facebook">Candado Facebook</string>
+    <string name="sign_google_account">Sign in with your Google Account</string>
+    <string name="google_help">Need Help?</string>
+    <string name="enter_email">Email</string>
+    <string name="enter_username">Username</string>
+    <string name="image_user_anonimo">User Anonimo Image</string>
+    <string name="enter_send1">SEND</string>
+    <string name="button_continue">CONTINUE</string>
+    <string name="enter_repeat_password">Repeat Password</string>
+    <string name="enter_current_password">Current Password</string>
+    <string name="enter_new_password">New Password</string>
+    <string name="enter_confirm_password">Confirm Password</string>
+    <string name="change_username_ToDo">Change Username</string>
+    <string name="change_email_ToDo">Change Email</string>
+    <string name="change_password_ToDo">Change Password</string>
+    <string name="recover_password_ToDo">Recover Password</string>
 </resources>

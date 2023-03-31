@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/top_barra"
+        android:layout_width="411dp"
+        android:layout_height="39dp"
+        android:background="@color/md_red_900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/login_sign_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_Google"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <ImageButton
+        android:id="@+id/retroceder3"
+        android:layout_width="53dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="358dp"
+        android:layout_marginBottom="687dp"
+        android:backgroundTint="@color/md_red_900"
+        android:contentDescription="@string/button_back_text"
+        android:text="@string/button_back_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        app:tint="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/title_google"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="469dp"
+        android:contentDescription="@string/conex_facebook"
+        android:src="@drawable/google_gris"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <TextView
+        android:id="@+id/google_account"
+        android:layout_width="287dp"
+        android:layout_height="26dp"
+        android:gravity="center"
+        android:text="@string/sign_google_account"
+        android:textColor="@color/md_grey_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258" />
+
+    <View
+        android:id="@+id/top_fond"
+        android:layout_width="299dp"
+        android:layout_height="351dp"
+        android:background="@color/md_grey_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <EditText
+        android:id="@+id/username_principal"
+        android:layout_width="267dp"
+        android:layout_height="48dp"
+        android:autofillHints="name user"
+        android:background="@color/white"
+        android:hint="@string/enter_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_barra"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <EditText
+        android:id="@+id/contraseña_google"
+        android:layout_width="267dp"
+        android:layout_height="48dp"
+        android:autofillHints="name user"
+        android:hint="@string/enter_contraseñap_hint"
+        android:background="@color/white"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
+
+    <TextView
+        android:id="@+id/help_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/google_help"
+        android:textColor="@color/md_grey_800"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_barra"
+        app:layout_constraintVertical_bias="0.753" />
+
+    <Button
+        android:id="@+id/continue_facebook"
+        android:layout_width="274dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/md_red_900"
+        android:text="@string/continue_facebook"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.708" />
+
+    <ImageView
+        android:id="@+id/user_anonimo"
+        android:layout_width="118dp"
+        android:layout_height="130dp"
+        android:contentDescription="@string/image_user_anonimo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386"
+        app:srcCompat="@drawable/usuario_anonimo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
