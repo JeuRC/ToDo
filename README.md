@@ -25,3 +25,7 @@ Las funcionalidades de mi aplicacion **ToDo** son:
 - Integración con otras herramientas: Permitir la integración con otras herramientas, como el calendario o el correo electrónico, para facilitar la organización y gestión de las tareas.
 ## Mockup
 https://marvelapp.com/prototype/j9b64a1
+## Integrantes
+- Jeu Rojas Castillo - <jrojas16@uan.edu.co> - ***Cod:13572129537***
+- Jinneth Fernanda Betancur Ramirez - <jbetancur64@uan.edu.co> - ***Cod:13572124468***
+- Dania Sindy Carolina Sandoval Cortes - <dsandoval66@uan.edu.co> - ***Cod:13572126806***
