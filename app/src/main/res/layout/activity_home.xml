@@ -6,4 +6,88 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
+    <View
+        android:id="@+id/top_barra"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icono" />
+
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:background="@drawable/boton_redondo"
+        android:text="..."
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/top_barra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgTasks"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="152dp"
+        android:background="@drawable/boton_redondo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_barra"
+        app:srcCompat="@drawable/logo_tasks" />
+
+    <ImageView
+        android:id="@+id/imgTeams"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="152dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/boton_redondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/logo_teams" />
+
+    <ImageView
+        android:id="@+id/imgLists"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/boton_redondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_barra"
+        app:srcCompat="@drawable/logo_lists" />
+
+    <ImageView
+        android:id="@+id/imgCalendar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="152dp"
+        android:layout_marginStart="70dp"
+        android:background="@drawable/boton_redondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo_calendar" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
