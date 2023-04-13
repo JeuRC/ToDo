@@ -9,7 +9,7 @@
     <View
         android:id="@+id/top_barra"
         android:layout_width="wrap_content"
-        android:layout_height="73dp"
+        android:layout_height="73sp"
         android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,107 +17,210 @@
 
     <ImageView
         android:id="@+id/imgIcon"
-        android:layout_width="73dp"
-        android:layout_height="73dp"
+        android:layout_width="46sp"
+        android:layout_height="46sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icono" />
+        app:srcCompat="@drawable/icono"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/btnProfile"
-        android:layout_width="73dp"
-        android:layout_height="73dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12sp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/boton_redondo"
-        android:text="..."
-        android:textSize="20dp"
+        android:text="&#183;&#183;&#183;"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
 
     <TextView
         android:id="@+id/txtHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tasks"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/top_barra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/txtTasks1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="24sp"
         android:text="Today"
         android:textColor="#000000"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_barra"
-        app:layout_constraintVertical_bias="0.067" />
+        app:layout_constraintVertical_bias="0.067"
+        tools:ignore="HardcodedText" />
 
     <CheckBox
         android:id="@+id/cbxCheck1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="24sp"
         android:text="Advance the proyect"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks1" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTasks1"
+        tools:ignore="HardcodedText" />
 
     <CheckBox
         android:id="@+id/cbxCheck2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="24sp"
+        android:layout_marginTop="48sp"
         android:text="Deliver proyect"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/txtTasks2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks1" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTasks1"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/txtTasks2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="24sp"
         android:text="Tomorrow"
         android:textColor="#000000"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_barra"
-        app:layout_constraintVertical_bias="0.283" />
+        app:layout_constraintVertical_bias="0.283"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/txtTasks3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="24sp"
         android:text="Week"
         android:textColor="#000000"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTasks2"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintVertical_bias="0.08"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/txtTasks4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="24sp"
         android:text="Tasks"
         android:textColor="#000000"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTasks3"
-        app:layout_constraintVertical_bias="0.117" />
+        app:layout_constraintVertical_bias="0.117"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="340sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_ovalado"
+        android:text="Search"
+        android:textColor="#969FAA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTasks4"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTasks4"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgTasks"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="70sp"
+        android:layout_marginTop="29sp"
+        android:background="@drawable/boton_redondo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch"
+        app:srcCompat="@drawable/logo_tasks" />
+
+    <ImageView
+        android:id="@+id/imgLists"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="29sp"
+        android:background="@drawable/boton_redondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch"
+        app:srcCompat="@drawable/logo_lists" />
+
+    <ImageView
+        android:id="@+id/imgCalendar"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginEnd="70sp"
+        android:layout_marginTop="29sp"
+        android:background="@drawable/boton_redondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch"
+        app:layout_constraintVertical_bias="0.518"
+        app:srcCompat="@drawable/logo_calendar" />
+
+    <TextView
+        android:id="@+id/txtTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76sp"
+        android:layout_marginBottom="29sp"
+        android:text="Tasks"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29sp"
+        android:text="Lists"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="67sp"
+        android:layout_marginBottom="29sp"
+        android:text="Calendar"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
