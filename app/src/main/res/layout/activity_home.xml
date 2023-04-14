@@ -50,7 +50,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/top_barra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imgTasks"
@@ -63,6 +64,17 @@
         app:layout_constraintTop_toBottomOf="@+id/top_barra"
         app:srcCompat="@drawable/logo_tasks" />
 
+    <TextView
+        android:id="@+id/txtTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94sp"
+        android:textSize="20sp"
+        android:text="Tasks"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTasks" />
+
     <ImageView
         android:id="@+id/imgTeams"
         android:layout_width="100dp"
@@ -73,6 +85,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/logo_teams" />
+
+    <TextView
+        android:id="@+id/txtTeams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="91sp"
+        android:text="Teams"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTeams" />
 
     <ImageView
         android:id="@+id/imgLists"
@@ -85,6 +108,17 @@
         app:layout_constraintTop_toBottomOf="@+id/top_barra"
         app:srcCompat="@drawable/logo_lists" />
 
+    <TextView
+        android:id="@+id/txtLists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="99sp"
+        android:text="Lists"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTasks" />
+
     <ImageView
         android:id="@+id/imgCalendar"
         android:layout_width="100dp"
@@ -95,6 +129,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logo_calendar" />
+
+    <TextView
+        android:id="@+id/txtCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81sp"
+        android:textSize="20sp"
+        android:text="Calendar"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCalendar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
