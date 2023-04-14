@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tasks">
+    tools:context=".Lists">
 
     <View
         android:id="@+id/top_barra"
@@ -41,10 +41,10 @@
         tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
 
     <TextView
-        android:id="@+id/txtHome"
+        android:id="@+id/txtList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tasks"
+        android:text="Lists"
         android:textSize="30sp"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/top_barra"
@@ -54,11 +54,11 @@
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/txtTasks1"
+        android:id="@+id/txtLists1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:text="Today"
+        android:text="Shooping"
         android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -72,10 +72,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:text="Advance the proyect"
+        android:text="Rice"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks1"
+        app:layout_constraintTop_toBottomOf="@+id/txtLists1"
         tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
     <CheckBox
@@ -84,19 +84,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
         android:layout_marginTop="48sp"
-        android:text="Deliver proyect"
+        android:text="Meat"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtTasks2"
+        app:layout_constraintBottom_toTopOf="@+id/txtLists2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks1"
+        app:layout_constraintTop_toBottomOf="@+id/txtLists1"
         tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/txtTasks2"
+        android:id="@+id/txtLists2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:text="Tomorrow"
+        android:text="Homeworks"
         android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -106,30 +106,30 @@
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/txtTasks3"
+        android:id="@+id/txtLists3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:text="Week"
+        android:text="Medicines"
         android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks2"
+        app:layout_constraintTop_toBottomOf="@+id/txtLists2"
         app:layout_constraintVertical_bias="0.08"
         tools:ignore="HardcodedText" />
 
     <TextView
-        android:id="@+id/txtTasks4"
+        android:id="@+id/txtLists4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:text="Tasks"
+        android:text="Movies"
         android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks3"
+        app:layout_constraintTop_toBottomOf="@+id/txtLists3"
         app:layout_constraintVertical_bias="0.117"
         tools:ignore="HardcodedText" />
 
@@ -147,7 +147,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imgSearch"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks4"
+        app:layout_constraintTop_toBottomOf="@+id/txtLists4"
         tools:ignore="HardcodedText,TextContrastCheck" />
 
     <ImageButton
@@ -157,7 +157,7 @@
         android:layout_margin="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks4"
+        app:layout_constraintTop_toBottomOf="@+id/txtLists4"
         app:srcCompat="?attr/homeAsUpIndicator"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
@@ -227,6 +227,5 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

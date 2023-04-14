@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tasks">
+    tools:context=".Teams">
 
     <View
         android:id="@+id/top_barra"
@@ -41,10 +41,10 @@
         tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
 
     <TextView
-        android:id="@+id/txtHome"
+        android:id="@+id/txtTeams"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tasks"
+        android:text="Teams"
         android:textSize="30sp"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/top_barra"
@@ -58,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:text="Today"
+        android:text="Pending tasks"
         android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -72,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:text="Advance the proyect"
+        android:text="Make the mockup"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTasks1"
@@ -84,7 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
         android:layout_marginTop="48sp"
-        android:text="Deliver proyect"
+        android:text="Finish graphical interface"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/txtTasks2"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,7 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:text="Tomorrow"
+        android:text="In progress"
         android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -110,7 +110,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:text="Week"
+        android:text="Done"
         android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -124,8 +124,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:text="Tasks"
-        android:textColor="#000000"
+        android:text=""
+        android:textColor="@android:color/transparent"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -227,6 +227,5 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
