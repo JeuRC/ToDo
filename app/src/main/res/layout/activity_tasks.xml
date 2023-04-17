@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Tasks">
 
     <View
@@ -33,6 +34,7 @@
         android:layout_marginTop="12sp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/boton_redondo"
+        android:backgroundTint="#51E4FF"
         android:text="&#183;&#183;&#183;"
         android:textSize="12sp"
         android:textColor="@color/white"
@@ -66,6 +68,19 @@
         app:layout_constraintTop_toBottomOf="@+id/top_barra"
         app:layout_constraintVertical_bias="0.067"
         tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/imgPlus3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24sp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTasks2"
+        app:layout_constraintVertical_bias="0.08"
+        app:srcCompat="@drawable/icono_plus"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <CheckBox
         android:id="@+id/cbxTasks1"
@@ -105,6 +120,19 @@
         app:layout_constraintVertical_bias="0.283"
         tools:ignore="HardcodedText" />
 
+    <ImageButton
+        android:id="@+id/imgPlus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24sp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_barra"
+        app:layout_constraintVertical_bias="0.283"
+        app:srcCompat="@drawable/icono_plus"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
     <TextView
         android:id="@+id/txtTasks3"
         android:layout_width="wrap_content"
@@ -119,12 +147,25 @@
         app:layout_constraintVertical_bias="0.08"
         tools:ignore="HardcodedText" />
 
+    <ImageButton
+        android:id="@+id/imgPlus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24sp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_barra"
+        app:layout_constraintVertical_bias="0.08"
+        app:srcCompat="@drawable/icono_plus"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
     <TextView
         android:id="@+id/txtTasks4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:text="Tasks"
+        android:text="Month"
         android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -132,6 +173,19 @@
         app:layout_constraintTop_toBottomOf="@+id/txtTasks3"
         app:layout_constraintVertical_bias="0.117"
         tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/imgPlus4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24sp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTasks3"
+        app:layout_constraintVertical_bias="0.117"
+        app:srcCompat="@drawable/icono_plus"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btnSearch"
@@ -152,14 +206,16 @@
 
     <ImageButton
         android:id="@+id/imgSearch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48sp"
+        android:layout_height="48sp"
         android:layout_margin="10sp"
+        android:background="@drawable/boton_redondo"
+        android:backgroundTint="#969FAA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTasks4"
-        app:srcCompat="?attr/homeAsUpIndicator"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        app:srcCompat="@drawable/icono_arrow"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/imgTasks"
@@ -168,6 +224,7 @@
         android:layout_marginStart="70sp"
         android:layout_marginTop="29sp"
         android:background="@drawable/boton_redondo"
+        android:backgroundTint="#51E4FF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSearch"
         app:srcCompat="@drawable/logo_tasks" />
@@ -178,6 +235,7 @@
         android:layout_height="50sp"
         android:layout_marginTop="29sp"
         android:background="@drawable/boton_redondo"
+        android:backgroundTint="#51E4FF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSearch"
@@ -190,6 +248,7 @@
         android:layout_marginEnd="70sp"
         android:layout_marginTop="29sp"
         android:background="@drawable/boton_redondo"
+        android:backgroundTint="#51E4FF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSearch"
         app:layout_constraintVertical_bias="0.518"

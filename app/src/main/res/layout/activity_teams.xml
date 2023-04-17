@@ -33,6 +33,7 @@
         android:layout_marginTop="12sp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/boton_redondo"
+        android:backgroundTint="#51E4FF"
         android:text="&#183;&#183;&#183;"
         android:textSize="12sp"
         android:textColor="@color/white"
@@ -152,13 +153,16 @@
 
     <ImageButton
         android:id="@+id/imgSearch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48sp"
+        android:layout_height="48sp"
         android:layout_margin="10sp"
+        android:background="@drawable/boton_redondo"
+        android:backgroundTint="#969FAA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgCalendar"
         app:layout_constraintTop_toBottomOf="@+id/txtTasks4"
-        app:srcCompat="?attr/homeAsUpIndicator"
+        app:srcCompat="@drawable/icono_arrow"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageView
@@ -168,6 +172,7 @@
         android:layout_marginStart="70sp"
         android:layout_marginTop="29sp"
         android:background="@drawable/boton_redondo"
+        android:backgroundTint="#51E4FF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSearch"
         app:srcCompat="@drawable/logo_tasks" />
@@ -178,6 +183,7 @@
         android:layout_height="50sp"
         android:layout_marginTop="29sp"
         android:background="@drawable/boton_redondo"
+        android:backgroundTint="#51E4FF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSearch"
@@ -190,6 +196,7 @@
         android:layout_marginEnd="70sp"
         android:layout_marginTop="29sp"
         android:background="@drawable/boton_redondo"
+        android:backgroundTint="#51E4FF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSearch"
         app:layout_constraintVertical_bias="0.518"
