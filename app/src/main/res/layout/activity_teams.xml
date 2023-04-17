@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Teams">
 
     <View
@@ -68,6 +69,19 @@
         app:layout_constraintVertical_bias="0.067"
         tools:ignore="HardcodedText" />
 
+    <ImageButton
+        android:id="@+id/imgPlus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24sp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_barra"
+        app:layout_constraintVertical_bias="0.08"
+        app:srcCompat="@drawable/icono_plus"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
     <CheckBox
         android:id="@+id/cbxTasks1"
         android:layout_width="wrap_content"
@@ -106,6 +120,19 @@
         app:layout_constraintVertical_bias="0.283"
         tools:ignore="HardcodedText" />
 
+    <ImageButton
+        android:id="@+id/imgPlus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24sp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_barra"
+        app:layout_constraintVertical_bias="0.283"
+        app:srcCompat="@drawable/icono_plus"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
     <TextView
         android:id="@+id/txtTasks3"
         android:layout_width="wrap_content"
@@ -119,6 +146,19 @@
         app:layout_constraintTop_toBottomOf="@+id/txtTasks2"
         app:layout_constraintVertical_bias="0.08"
         tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/imgPlus3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24sp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTasks2"
+        app:layout_constraintVertical_bias="0.08"
+        app:srcCompat="@drawable/icono_plus"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/txtTasks4"
