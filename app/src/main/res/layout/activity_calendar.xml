@@ -58,6 +58,8 @@
     <ScrollView
         android:layout_width="409dp"
         android:layout_height="480dp"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
         app:layout_constraintBottom_toTopOf="@+id/btnSearch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,6 +74,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
                 android:background="#51E4FF"
                 android:text="Today, Wednesday, March 1st"
                 android:textColor="#637E95"
@@ -80,9 +83,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10sp"
-                android:layout_marginBottom="10sp">
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -148,16 +149,28 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
                 android:background="#51E4FF"
                 android:text="Tomorrow, Thursday, March 2nd"
                 android:textColor="#637E95"
                 android:textSize="21sp"
                 tools:ignore="TextContrastCheck" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10sp">
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="#51E4FF"
+                android:text="Monday, March 3rd"
+                android:textColor="#637E95"
+                android:textSize="21sp"
+                tools:ignore="TextContrastCheck" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -222,8 +235,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10sp">
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -288,17 +300,17 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
                 android:background="#51E4FF"
-                android:text="Monday, March 3rd"
+                android:text="Wednesday, March 8th"
                 android:textColor="#637E95"
                 android:textSize="21sp"
                 tools:ignore="TextContrastCheck" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10sp"
-                android:layout_marginBottom="10sp">
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -350,19 +362,77 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#51E4FF"
-                android:text="Wednesday, March 8th"
-                android:textColor="#637E95"
-                android:textSize="21sp"
-                tools:ignore="TextContrastCheck" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
                 android:background="#51E4FF"
                 android:text="Sunday, March 24th"
                 android:textColor="#637E95"
                 android:textSize="21sp"
                 tools:ignore="TextContrastCheck" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5sp"
+                        android:text="02:00 PM"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150sp"
+                    android:background="#3B5998"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/txtTasks4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Conference"
+                        android:textColor="@color/white"
+                        android:paddingStart="10sp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/txtTasks5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Presentation"
+                        android:textColor="@color/white"
+                        android:paddingStart="10sp"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
 
@@ -372,9 +442,10 @@
         android:layout_height="70sp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/boton_redondo"
-        android:backgroundTint="#51E4FF"
+        android:backgroundTint="@color/white"
+
         android:text="&#43;"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="50sp"
         android:paddingBottom="1sp"
         app:layout_constraintBottom_toTopOf="@+id/btnSearch"
