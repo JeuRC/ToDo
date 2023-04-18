@@ -12,6 +12,24 @@
         android:theme="@style/Theme.ToDo"
         tools:targetApi="31">
         <activity
+            android:name=".Calendar"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Teams"
+            android:exported="false" />
+        <activity
+            android:name=".Lists"
+            android:exported="false" />
+        <activity
+            android:name=".Tasks"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
             android:name=".Home_Task_Todo"
             android:exported="false" />
         <activity

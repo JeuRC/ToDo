@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <View
         android:id="@+id/top_barra"
         android:layout_width="411dp"
         android:layout_height="39dp"
-        android:background="@color/md_indigo_800"
+        android:background="#3B5998"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,7 +36,7 @@
         android:layout_height="44dp"
         android:layout_marginEnd="358dp"
         android:layout_marginBottom="687dp"
-        android:backgroundTint="@color/md_indigo_800"
+        android:backgroundTint="#3B5998"
         android:contentDescription="@string/button_back_text"
         android:text="@string/button_back_text"
         app:tint="@android:color/white"
@@ -123,10 +124,11 @@
         android:id="@+id/continue_facebook"
         android:layout_width="240dp"
         android:layout_height="56dp"
-        android:backgroundTint="@color/md_indigo_800"
+        android:backgroundTint="#3B5998"
         android:text="@string/continue_facebook"
         android:textAllCaps="false"
         android:textSize="16sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.535"

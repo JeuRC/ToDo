@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".Profile">
+
+    <ImageButton
+        android:id="@+id/imgBack"
+        android:layout_width="53dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="358dp"
+        android:layout_marginBottom="687dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/button_back_text"
+        android:text="@string/button_back_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnLagout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:background="@drawable/boton_ovalado"
+        android:backgroundTint="#51E4FF"
+        android:text="Lagout"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="170sp"
+        android:layout_height="170sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLagout"
+        app:srcCompat="@drawable/iconop" />
+
+    <ImageButton
+        android:id="@+id/imgPicture"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:background="@drawable/boton_redondo"
+        android:backgroundTint="#CED8E4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+        app:srcCompat="@drawable/icono_usuario"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brendan Moore"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPicture" />
+
+    <ImageButton
+        android:id="@+id/imgEdit1"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_marginStart="5sp"
+        android:background="#51E4FF"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail_address"
+        app:layout_constraintStart_toEndOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/imgPicture"
+        app:srcCompat="@drawable/icono_edit"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginStart="70sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <TextView
+        android:id="@+id/txtEmail_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="****************@*****.com"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginEnd="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <ImageButton
+        android:id="@+id/imgEdit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5sp"
+        android:background="#51E4FF"
+        app:layout_constraintBottom_toTopOf="@+id/txtCharacters"
+        app:layout_constraintStart_toEndOf="@+id/txtEmail_address"
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
+        app:srcCompat="@drawable/icono_edit"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70sp"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <TextView
+        android:id="@+id/txtCharacters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70sp"
+        android:text="*************"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail_address" />
+
+    <ImageButton
+        android:id="@+id/imgEdit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5sp"
+        android:background="#51E4FF"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCharacters"
+        app:layout_constraintStart_toEndOf="@+id/txtCharacters"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail_address"
+        app:srcCompat="@drawable/icono_edit"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
