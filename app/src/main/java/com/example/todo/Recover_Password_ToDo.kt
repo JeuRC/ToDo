@@ -15,12 +15,11 @@ class Recover_Password_ToDo : AppCompatActivity() {
         val send1 = findViewById<Button>(R.id.send1)
 
         retroceder.setOnClickListener{
-            val intent: Intent = Intent(this, MainActivity::class.java)
+            val intent: Intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
-
         send1.setOnClickListener{
-            val intent: Intent = Intent(this, MainActivity::class.java)
+            val intent: Intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
     }
