@@ -30,9 +30,6 @@
             android:name=".Home"
             android:exported="false" />
         <activity
-            android:name=".Home_Task_Todo"
-            android:exported="false" />
-        <activity
             android:name=".Login_Sign_Google"
             android:exported="false" />
         <activity
@@ -64,7 +61,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.App.Starting">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
