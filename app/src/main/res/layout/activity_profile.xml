@@ -56,10 +56,12 @@
         android:id="@+id/imgPicture"
         android:layout_width="100sp"
         android:layout_height="100sp"
+        android:background="@drawable/boton_redondo"
+        android:backgroundTint="#CED8E4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgLogo"
-        app:srcCompat="@drawable/usuario_anonimo"
+        app:srcCompat="@drawable/icono_usuario"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
@@ -72,6 +74,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgPicture" />
+
+    <ImageButton
+        android:id="@+id/imgEdit1"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_marginStart="5sp"
+        android:background="#51E4FF"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail_address"
+        app:layout_constraintStart_toEndOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/imgPicture"
+        app:srcCompat="@drawable/icono_edit"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/txtEmail"
@@ -95,6 +109,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtName" />
 
+    <ImageButton
+        android:id="@+id/imgEdit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5sp"
+        android:background="#51E4FF"
+        app:layout_constraintBottom_toTopOf="@+id/txtCharacters"
+        app:layout_constraintStart_toEndOf="@+id/txtEmail_address"
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
+        app:srcCompat="@drawable/icono_edit"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
     <TextView
         android:id="@+id/txtPassword"
         android:layout_width="wrap_content"
@@ -116,5 +142,17 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtEmail_address" />
+
+    <ImageButton
+        android:id="@+id/imgEdit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5sp"
+        android:background="#51E4FF"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCharacters"
+        app:layout_constraintStart_toEndOf="@+id/txtCharacters"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail_address"
+        app:srcCompat="@drawable/icono_edit"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
