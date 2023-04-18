@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Home">
 
     <View
@@ -17,21 +18,29 @@
 
     <ImageView
         android:id="@+id/imgIcon"
-        android:layout_width="73dp"
-        android:layout_height="73dp"
+        android:layout_width="46sp"
+        android:layout_height="46sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icono" />
+        app:srcCompat="@drawable/icono"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/btnProfile"
-        android:layout_width="73dp"
-        android:layout_height="73dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12sp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/boton_redondo"
-        android:text="..."
-        android:textSize="20dp"
+        android:backgroundTint="#51E4FF"
+        android:text="&#183;&#183;&#183;"
+        android:textSize="12sp"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
 
     <TextView
         android:id="@+id/txtHome"
@@ -43,7 +52,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/top_barra"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imgTasks"
@@ -52,9 +62,21 @@
         android:layout_marginStart="70dp"
         android:layout_marginTop="152dp"
         android:background="@drawable/boton_redondo"
+        android:backgroundTint="#51E4FF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_barra"
         app:srcCompat="@drawable/logo_tasks" />
+
+    <TextView
+        android:id="@+id/txtTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94sp"
+        android:textSize="20sp"
+        android:text="Tasks"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTasks" />
 
     <ImageView
         android:id="@+id/imgTeams"
@@ -63,9 +85,21 @@
         android:layout_marginBottom="152dp"
         android:layout_marginEnd="70dp"
         android:background="@drawable/boton_redondo"
+        android:backgroundTint="#51E4FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/logo_teams" />
+
+    <TextView
+        android:id="@+id/txtTeams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="91sp"
+        android:text="Teams"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTeams" />
 
     <ImageView
         android:id="@+id/imgLists"
@@ -74,9 +108,21 @@
         android:layout_marginTop="152dp"
         android:layout_marginEnd="70dp"
         android:background="@drawable/boton_redondo"
+        android:backgroundTint="#51E4FF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_barra"
         app:srcCompat="@drawable/logo_lists" />
+
+    <TextView
+        android:id="@+id/txtLists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="99sp"
+        android:text="Lists"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTasks" />
 
     <ImageView
         android:id="@+id/imgCalendar"
@@ -85,9 +131,21 @@
         android:layout_marginBottom="152dp"
         android:layout_marginStart="70dp"
         android:background="@drawable/boton_redondo"
+        android:backgroundTint="#51E4FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logo_calendar" />
+
+    <TextView
+        android:id="@+id/txtCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81sp"
+        android:textSize="20sp"
+        android:text="Calendar"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCalendar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

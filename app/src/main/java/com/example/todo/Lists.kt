@@ -7,15 +7,15 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 
-class Tasks : AppCompatActivity() {
+class Lists : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tasks)
+        setContentView(R.layout.activity_lists)
 
         val imgIcon = findViewById<ImageView>(R.id.imgIcon)
         val btnProfile = findViewById<Button>(R.id.btnProfile)
-        val imgLists = findViewById<ImageView>(R.id.imgLists)
-        val txtLists = findViewById<TextView>(R.id.txtLists)
+        val imgTasks = findViewById<ImageView>(R.id.imgTasks)
+        val txtTasks = findViewById<TextView>(R.id.txtTasks)
         val imgCalendar = findViewById<ImageView>(R.id.imgCalendar)
         val txtCalendar = findViewById<TextView>(R.id.txtCalendar)
 
@@ -27,12 +27,12 @@ class Tasks : AppCompatActivity() {
             val intent: Intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
-        imgLists.setOnClickListener{
-            val intent: Intent = Intent(this, Lists::class.java)
+        imgTasks.setOnClickListener{
+            val intent: Intent = Intent(this, Tasks::class.java)
             startActivity(intent)
         }
-        txtLists.setOnClickListener{
-            val intent: Intent = Intent(this, Lists::class.java)
+        txtTasks.setOnClickListener{
+            val intent: Intent = Intent(this, Tasks::class.java)
             startActivity(intent)
         }
         imgCalendar.setOnClickListener{

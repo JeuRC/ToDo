@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <View
@@ -14,23 +15,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/retroceder"
-        android:layout_width="53dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="358dp"
-        android:layout_marginBottom="687dp"
-        android:backgroundTint="#51E4FF"
-        android:contentDescription="@string/button_back_text"
-        android:text="@string/button_back_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="?attr/homeAsUpIndicator" />
 
     <ImageView
         android:id="@+id/iconop"
@@ -86,6 +70,7 @@
         android:layout_marginBottom="320dp"
         android:backgroundTint="#51E4FF"
         android:text="@string/enter_login1"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.263"
@@ -99,6 +84,7 @@
         android:layout_height="wrap_content"
         android:text="@string/not_account1"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -150,6 +136,7 @@
         android:layout_height="62dp"
         android:backgroundTint="#3B5998"
         android:text="@string/button_login_facebook"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
@@ -163,6 +150,7 @@
         android:layout_height="60dp"
         android:backgroundTint="#DB4A39"
         android:text="@string/button_login_google"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Tasks">
+    tools:context=".Teams">
 
     <View
         android:id="@+id/top_barra"
@@ -43,10 +43,10 @@
         tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
 
     <TextView
-        android:id="@+id/txtHome"
+        android:id="@+id/txtTeams"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tasks"
+        android:text="Teams"
         android:textSize="30sp"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/top_barra"
@@ -60,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:text="Today"
+        android:text="Pending tasks"
         android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -70,14 +70,14 @@
         tools:ignore="HardcodedText" />
 
     <ImageButton
-        android:id="@+id/imgPlus3"
+        android:id="@+id/imgPlus1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24sp"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks2"
+        app:layout_constraintTop_toBottomOf="@+id/top_barra"
         app:layout_constraintVertical_bias="0.08"
         app:srcCompat="@drawable/icono_plus"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -87,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:text="Advance the proyect"
+        android:text="Make the mockup"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTasks1"
@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
         android:layout_marginTop="48sp"
-        android:text="Deliver proyect"
+        android:text="Finish graphical interface"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/txtTasks2"
         app:layout_constraintStart_toStartOf="parent"
@@ -111,7 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:text="Tomorrow"
+        android:text="In progress"
         android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -138,7 +138,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:text="Week"
+        android:text="Done"
         android:textColor="#000000"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -148,14 +148,14 @@
         tools:ignore="HardcodedText" />
 
     <ImageButton
-        android:id="@+id/imgPlus1"
+        android:id="@+id/imgPlus3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24sp"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top_barra"
+        app:layout_constraintTop_toBottomOf="@+id/txtTasks2"
         app:layout_constraintVertical_bias="0.08"
         app:srcCompat="@drawable/icono_plus"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -165,27 +165,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24sp"
-        android:text="Month"
-        android:textColor="#000000"
+        android:text=""
+        android:textColor="@android:color/transparent"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTasks3"
         app:layout_constraintVertical_bias="0.117"
         tools:ignore="HardcodedText" />
-
-    <ImageButton
-        android:id="@+id/imgPlus4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24sp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks3"
-        app:layout_constraintVertical_bias="0.117"
-        app:srcCompat="@drawable/icono_plus"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btnSearch"
@@ -213,9 +200,10 @@
         android:backgroundTint="#969FAA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgCalendar"
         app:layout_constraintTop_toBottomOf="@+id/txtTasks4"
         app:srcCompat="@drawable/icono_arrow"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/imgTasks"
@@ -286,6 +274,5 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
