@@ -2,8 +2,24 @@
 
 ![ToDo2](https://user-images.githubusercontent.com/90876062/232974613-69d8de40-8abb-4091-8b01-7b66d4dfa5f8.png)
 
-![GitHub language count](https://img.shields.io/github/languages/count/JeuRC/ToDo?style=plastic)![GitHub top language](https://img.shields.io/github/languages/top/JeuRC/ToDo?style=plastic)![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/JeuRC/ToDo?style=plastic)![GitHub repo file count](https://img.shields.io/github/directory-file-count/JeuRC/ToDo?style=plastic)![GitHub repo size](https://img.shields.io/github/repo-size/JeuRC/Todo?style=plastic)![GitHub pull requests](https://img.shields.io/github/issues-pr/JeuRC/ToDo?style=plastic)![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/JeuRC/ToDo?style=plastic)![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/JeuRC/ToDo?style=plastic)![GitHub commit activity](https://img.shields.io/github/commit-activity/w/JeuRC/ToDo?style=plastic)![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/JeuRC/ToDo/main?label=commit%20activity%20main&style=plastic)![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/JeuRC/ToDo/jeu?label=commit%20activity%20jeu&style=plastic)![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/JeuRC/ToDo/jinneth?label=commit%20activity%20jinneth&style=plastic)![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/JeuRC/ToDo/carolina?label=commit%20activity%20carolina&style=plastic)![GitHub forks](https://img.shields.io/github/forks/JeuRC/ToDo?style=social)![GitHub Repo stars](https://img.shields.io/github/stars/JeuRC/ToDo?style=social)![GitHub watchers](https://img.shields.io/github/watchers/JeuRC/ToDO?style=social)
-![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+
+<a href="https://github.com/JeuRC/ToDo/search?l=kotlin"><img src="https://img.shields.io/github/languages/count/JeuRC/ToDo?style=plastic" /></a>
+<a href="https://github.com/JeuRC/ToDo/search?l=kotlin"><img src="https://img.shields.io/github/languages/top/JeuRC/ToDo?style=plastic" /></a>
+<a href="https://github.com/JeuRC/ToDo/tree/main/app"><img src="https://img.shields.io/github/languages/code-size/JeuRC/ToDo?style=plastic" /></a>
+<a href="https://github.com/JeuRC/ToDo"><img src="https://img.shields.io/github/directory-file-count/JeuRC/ToDo?style=plastic" /></a>
+<a href="https://github.com/JeuRC/ToDo"><img src="(https://img.shields.io/github/repo-size/JeuRC/Todo?style=plastic" /></a>
+<a href="https://github.com/JeuRC/ToDo/pulls?q=is%3Aopen+is%3Apr"><img src="https://img.shields.io/github/issues-pr/JeuRC/ToDo?style=plastic" /></a>
+<a href="https://github.com/JeuRC/ToDo/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed/JeuRC/ToDo?style=plastic" /></a>
+<a href="https://github.com/JeuRC/ToDo/tags"><img src="https://img.shields.io/github/v/tag/JeuRC/ToDo?style=plastic" /></a>
+<a href="https://github.com/JeuRC/ToDo"><img src="https://img.shields.io/github/commit-activity/w/JeuRC/ToDo?style=plastic" /></a>
+<a href="https://github.com/JeuRC/ToDo/commits/main"><img src="https://img.shields.io/github/commit-activity/w/JeuRC/ToDo/main?label=commit%20activity%20main&style=plastic" /></a>
+<a href="https://github.com/JeuRC/ToDo/commits/jeu"><img src="https://img.shields.io/github/commit-activity/w/JeuRC/ToDo/jeu?label=commit%20activity%20jeu&style=plastic" /></a>
+<a href="https://github.com/JeuRC/ToDo/commits/jinneth"><img src="https://img.shields.io/github/commit-activity/w/JeuRC/ToDo/jinneth?label=commit%20activity%20jinneth&style=plastic" /></a>
+<a href="https://github.com/JeuRC/ToDo/commits/carolina"><img src="https://img.shields.io/github/commit-activity/w/JeuRC/ToDo/carolina?label=commit%20activity%20carolina&style=plastic" /></a>
+<a href="https://img.shields.io/github/forks/JeuRC/ToDo?style=social"><img src="https://img.shields.io/github/forks/JeuRC/ToDo?style=social" /></a>
+<a href="https://github.com/JeuRC/ToDo"><img src="https://img.shields.io/github/stars/JeuRC/ToDo?style=social" /></a>
+<a href="https://github.com/JeuRC/ToDo"><img src="https://img.shields.io/github/watchers/JeuRC/ToDO?style=social" /></a>
+<a href="https://marvelapp.com/prototype/j9b64a1"><img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green" /></a>
 ## :bulb:Idea:
 ### Lista de tareas: una aplicación para crear y administrar una lista de tareas pendientes y marcarlas como completadas.
 #### Aplicaciones Similares:
