@@ -39,4 +39,8 @@
     <string name="change_email_ToDo">Change Email</string>
     <string name="change_password_ToDo">Change Password</string>
     <string name="recover_password_ToDo">Recover Password</string>
+    <string name="btnLagout">Lagout</string>
+    <string name="txtUsername">Brendan Moore</string>
+    <string name="txtEmailHidden">****************@*****.com</string>
+    <string name="txtPasswordHidden">*************</string>
 </resources>

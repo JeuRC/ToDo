@@ -27,15 +27,14 @@ class Recover_Login_ToDo : AppCompatActivity() {
 
         val retroceder = findViewById<ImageButton>(R.id.retroceder)
         val login1 = findViewById<Button>(R.id.login1)
+        val username2=findViewById<EditText>(R.id.username2)
+        val email2=findViewById<EditText>(R.id.email2)
+        val password_ToDo_2=findViewById<EditText>(R.id.password_ToDo_2)
+        val repeat_password=findViewById<EditText>(R.id.repeat_password)
         val login_facebook = findViewById<Button>(R.id.login_facebook)
         val login_google = findViewById<Button>(R.id.login_google)
 
         retroceder.setOnClickListener{
-            val intent: Intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
-
-        login1.setOnClickListener{
             val intent: Intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
@@ -51,8 +50,24 @@ class Recover_Login_ToDo : AppCompatActivity() {
         }
 
         login1.setOnClickListener{
+            if (username2.text.toString().isEmpty()) {
+                Toast.makeText(this,"Enter a user", Toast.LENGTH_LONG).show()
+            }else{
+                if (email2.text.toString().isEmpty()) {
+                    Toast.makeText(this,"Enter an email", Toast.LENGTH_LONG).show()
+                }else{
+                    if (password_ToDo_2.text.toString().isEmpty()) {
+                    Toast.makeText(this, "Enter a password", Toast.LENGTH_LONG).show()
+                    }else{
+                        if (repeat_password.text.toString().isEmpty()) {
+                        Toast.makeText(this, "Repeat password", Toast.LENGTH_LONG).show()
+                        }else{
+                            confirmPassword()
 
-            confirmPassword()
+                        }
+                    }
+                }
+            }
         }
     }
     private fun guardar (){
@@ -77,9 +92,9 @@ class Recover_Login_ToDo : AppCompatActivity() {
         if(password1==password_ToDo_2?.text.toString() || password2==password_ToDo_2?.text.toString()){
             val login=Intent(this,MainActivity::class.java)
             startActivity(login)
-            Toast.makeText(this,"Se ha registrado exitosamente", Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"You have successfully registered", Toast.LENGTH_LONG).show()
         } else{
-            Toast.makeText(this,"Usuario no registrado", Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"Unregistered user", Toast.LENGTH_LONG).show()
         }
         username2?.setText("")
         email2?.setText("")
@@ -93,7 +108,7 @@ class Recover_Login_ToDo : AppCompatActivity() {
             guardar()
             irLogin()
         }else{
-            Toast.makeText(this,"La contraseña no coincide", Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"Password does not match", Toast.LENGTH_LONG).show()
         }
     }
 }
