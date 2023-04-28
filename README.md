@@ -42,7 +42,7 @@ Las funcionalidades de mi aplicacion **ToDo** son:
 - **Notificaciones:** Notificar al usuario cuando una tarea está cerca de su fecha de vencimiento o ha sido marcada como completada.
 - **Compartir tareas:** Permitir al usuario compartir tareas con otros usuarios y asignar tareas a miembros del equipo.
 - **Comentarios y notas:** Permitir al usuario agregar comentarios o notas a las tareas para mayor claridad o información adicional.
-- **Integración con otras herramientas:** Permitir la integración con otras herramientas, como el calendario o el correo electrónico, para facilitar la organización y gestión de las tareas.
+- **Integración con otras herramientas:** Permitir la integración del calendario de Google, para facilitar la organización y gestión de las tareas.
 ## :iphone:Mockup
 https://marvelapp.com/prototype/j9b64a1
 ## :busts_in_silhouette:Integrantes
