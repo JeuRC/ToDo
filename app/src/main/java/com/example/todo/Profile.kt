@@ -34,7 +34,7 @@ class Profile : AppCompatActivity() {
             startActivity(intent)
         }
         imgEdit3.setOnClickListener{
-            val intent: Intent = Intent(this, Recover_Password_ToDo::class.java)
+            val intent: Intent = Intent(this, New_Password_ToDo::class.java)
             startActivity(intent)
         }
     }
