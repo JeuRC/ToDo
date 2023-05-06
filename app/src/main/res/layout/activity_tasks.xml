@@ -55,153 +55,145 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/txtTasks1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24sp"
-        android:text="Today"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="480dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSearch"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_barra"
-        app:layout_constraintVertical_bias="0.067"
-        tools:ignore="HardcodedText" />
+        tools:ignore="SpeakableTextPresentCheck">
 
-    <ImageButton
-        android:id="@+id/imgPlus3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24sp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks2"
-        app:layout_constraintVertical_bias="0.08"
-        app:srcCompat="@drawable/icono_plus"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <CheckBox
-        android:id="@+id/cbxTasks1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24sp"
-        android:text="Advance the proyect"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks1"
-        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
-
-    <CheckBox
-        android:id="@+id/cbxTasks2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24sp"
-        android:layout_marginTop="48sp"
-        android:text="Deliver proyect"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtTasks2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks1"
-        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/txtTasks2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24sp"
-        android:text="Tomorrow"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top_barra"
-        app:layout_constraintVertical_bias="0.283"
-        tools:ignore="HardcodedText" />
-
-    <ImageButton
-        android:id="@+id/imgPlus2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24sp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top_barra"
-        app:layout_constraintVertical_bias="0.283"
-        app:srcCompat="@drawable/icono_plus"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/txtTasks3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24sp"
-        android:text="Week"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks2"
-        app:layout_constraintVertical_bias="0.08"
-        tools:ignore="HardcodedText" />
-
-    <ImageButton
-        android:id="@+id/imgPlus1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24sp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top_barra"
-        app:layout_constraintVertical_bias="0.08"
-        app:srcCompat="@drawable/icono_plus"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/txtTasks4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24sp"
-        android:text="Month"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks3"
-        app:layout_constraintVertical_bias="0.117"
-        tools:ignore="HardcodedText" />
-
-    <ImageButton
-        android:id="@+id/imgPlus4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24sp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks3"
-        app:layout_constraintVertical_bias="0.117"
-        app:srcCompat="@drawable/icono_plus"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60sp"
+                    android:layout_marginStart="24sp"
+                    android:text="@string/txtTasks1"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    tools:ignore="TextContrastCheck" />
+                <ImageButton
+                    android:id="@+id/imgPlus1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60sp"
+                    android:layout_marginLeft="266sp"
+                    android:background="@color/white"
+                    app:srcCompat="@drawable/icono_plus"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvwTaskToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60sp"
+                    android:layout_marginStart="24sp"
+                    android:text="@string/txtTasks2"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    tools:ignore="TextContrastCheck" />
+                <ImageButton
+                    android:id="@+id/imgPlus2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60sp"
+                    android:layout_marginLeft="220sp"
+                    android:background="@color/white"
+                    app:srcCompat="@drawable/icono_plus"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvwTaskTomorrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60sp"
+                    android:layout_marginStart="24sp"
+                    android:text="@string/txtTasks3"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    tools:ignore="TextContrastCheck" />
+                <ImageButton
+                    android:id="@+id/imgPlus3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60sp"
+                    android:layout_marginLeft="273sp"
+                    android:background="@color/white"
+                    app:srcCompat="@drawable/icono_plus"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvwTaskWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60sp"
+                    android:layout_marginStart="24sp"
+                    android:text="@string/txtTasks4"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    tools:ignore="TextContrastCheck" />
+                <ImageButton
+                    android:id="@+id/imgPlus4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60sp"
+                    android:layout_marginLeft="263sp"
+                    android:background="@color/white"
+                    app:srcCompat="@drawable/icono_plus"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvwTaskMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        </ScrollView>
     <Button
         android:id="@+id/btnSearch"
         android:layout_width="340sp"
         android:layout_height="wrap_content"
         android:background="@drawable/boton_ovalado"
         android:backgroundTint="#54969FAA"
-        android:text="Search"
-        android:textSize="20sp"
-        android:textColor="#969FAA"
         android:paddingRight="260sp"
+        android:text="Search"
         android:textAllCaps="false"
+        android:textColor="#969FAA"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imgSearch"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks4"
+        app:layout_constraintTop_toBottomOf="@+id/top_barra"
+        app:layout_constraintVertical_bias="0.789"
         tools:ignore="HardcodedText,TextContrastCheck" />
 
     <ImageButton
@@ -213,7 +205,8 @@
         android:backgroundTint="#969FAA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTasks4"
+        app:layout_constraintTop_toBottomOf="@+id/top_barra"
+        app:layout_constraintVertical_bias="0.789"
         app:srcCompat="@drawable/icono_arrow"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -286,6 +279,7 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
