@@ -50,4 +50,4 @@ https://marvelapp.com/prototype/j9b64a1
 - Jinneth Fernanda Betancur Ramirez - <jbetancur64@uan.edu.co> - ***Cod:13572124468***
 - Dania Sindy Carolina Sandoval Cortes - <dsandoval66@uan.edu.co> - ***Cod:13572126806***
 <!--<a href="https://github.com/JeuRC/ToDo/graphs/contributors"><img src="https://opencollective.com/Docusaurus/contributors.svg?width=890&button=false" /></a>-->
-<a href="https://github.com/JeuRC/ToDo/network"><img src="https://i.ibb.co/qrFjcF7/Arbol.png" alt="Arbol" border="0"></a>
+<a href="https://github.com/JeuRC/ToDo/network"><img src="https://user-images.githubusercontent.com/90876062/236896864-85e063a3-123b-4cd4-b048-481f2fb1ac89.png" border="0"></a>
