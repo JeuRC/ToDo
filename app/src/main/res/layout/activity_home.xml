@@ -35,7 +35,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/boton_redondo"
         android:backgroundTint="#51E4FF"
-        android:text="&#183;&#183;&#183;"
+        android:text="@string/btnProfile"
         android:textSize="12sp"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,8 +46,8 @@
         android:id="@+id/txtHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Home"
-        android:textSize="30dp"
+        android:text="@string/txtTitle_home"
+        android:textSize="30sp"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/top_barra"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +65,8 @@
         android:backgroundTint="#51E4FF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_barra"
-        app:srcCompat="@drawable/logo_tasks" />
+        app:srcCompat="@drawable/logo_tasks"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/txtTasks"
@@ -73,7 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="94sp"
         android:textSize="20sp"
-        android:text="Tasks"
+        android:text="@string/txtTasks"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgTasks" />
@@ -88,14 +89,15 @@
         android:backgroundTint="#51E4FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/logo_teams" />
+        app:srcCompat="@drawable/logo_teams"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/txtTeams"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="91sp"
-        android:text="Teams"
+        android:text="@string/txtTeams"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -111,14 +113,15 @@
         android:backgroundTint="#51E4FF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_barra"
-        app:srcCompat="@drawable/logo_lists" />
+        app:srcCompat="@drawable/logo_lists"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/txtLists"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="99sp"
-        android:text="Lists"
+        android:text="@string/txtLists"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -134,7 +137,8 @@
         android:backgroundTint="#51E4FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo_calendar" />
+        app:srcCompat="@drawable/logo_calendar"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/txtCalendar"
@@ -142,7 +146,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="81sp"
         android:textSize="20sp"
-        android:text="Calendar"
+        android:text="@string/txtCalendar"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgCalendar" />

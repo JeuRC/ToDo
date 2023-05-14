@@ -1,12 +1,11 @@
 package com.example.todo
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,39 +23,39 @@ class Home : AppCompatActivity() {
         val txtTeams = findViewById<TextView>(R.id.txtTeams)
 
         btnProfile.setOnClickListener{
-            val intent: Intent = Intent(this, Profile::class.java)
+            val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
         imgTasks.setOnClickListener{
-            val intent: Intent = Intent(this, Tasks::class.java)
+            val intent = Intent(this, Tasks::class.java)
             startActivity(intent)
         }
         txtTasks.setOnClickListener{
-            val intent: Intent = Intent(this, Tasks::class.java)
+            val intent = Intent(this, Tasks::class.java)
             startActivity(intent)
         }
         imgLists.setOnClickListener{
-            val intent: Intent = Intent(this, Lists::class.java)
+            val intent = Intent(this, Lists::class.java)
             startActivity(intent)
         }
         txtLists.setOnClickListener{
-            val intent: Intent = Intent(this, Lists::class.java)
+            val intent = Intent(this, Lists::class.java)
             startActivity(intent)
         }
         imgCalendar.setOnClickListener{
-            val intent: Intent = Intent(this, Calendar::class.java)
+            val intent = Intent(this, Calendar::class.java)
             startActivity(intent)
         }
         txtCalendar.setOnClickListener{
-            val intent: Intent = Intent(this, Calendar::class.java)
+            val intent = Intent(this, Calendar::class.java)
             startActivity(intent)
         }
         imgTeams.setOnClickListener{
-            val intent: Intent = Intent(this, Teams::class.java)
+            val intent = Intent(this, Teams::class.java)
             startActivity(intent)
         }
         txtTeams.setOnClickListener{
-            val intent: Intent = Intent(this, Teams::class.java)
+            val intent = Intent(this, Teams::class.java)
             startActivity(intent)
         }
     }

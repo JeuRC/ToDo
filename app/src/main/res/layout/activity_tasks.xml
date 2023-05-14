@@ -35,7 +35,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/boton_redondo"
         android:backgroundTint="#51E4FF"
-        android:text="&#183;&#183;&#183;"
+        android:text="@string/btnProfile"
         android:textSize="12sp"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +46,7 @@
         android:id="@+id/txtHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tasks"
+        android:text="@string/txtTasks"
         android:textSize="30sp"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/top_barra"
@@ -86,7 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="60sp"
-                    android:layout_marginLeft="266sp"
+                    android:layout_marginStart="266sp"
                     android:background="@color/white"
                     app:srcCompat="@drawable/icono_plus"
                     tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -113,7 +113,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="60sp"
-                    android:layout_marginLeft="220sp"
+                    android:layout_marginStart="220sp"
                     android:background="@color/white"
                     app:srcCompat="@drawable/icono_plus"
                     tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -140,7 +140,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="60sp"
-                    android:layout_marginLeft="273sp"
+                    android:layout_marginStart="273sp"
                     android:background="@color/white"
                     app:srcCompat="@drawable/icono_plus"
                     tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -167,7 +167,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="60sp"
-                    android:layout_marginLeft="263sp"
+                    android:layout_marginStart="263sp"
                     android:background="@color/white"
                     app:srcCompat="@drawable/icono_plus"
                     tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
@@ -180,21 +180,21 @@
         </ScrollView>
     <Button
         android:id="@+id/btnSearch"
-        android:layout_width="340sp"
+        android:layout_width="320sp"
         android:layout_height="wrap_content"
         android:background="@drawable/boton_ovalado"
         android:backgroundTint="#54969FAA"
-        android:paddingRight="260sp"
-        android:text="Search"
+        android:paddingEnd="250sp"
+        android:text="@string/btnSearch"
         android:textAllCaps="false"
         android:textColor="#969FAA"
-        android:textSize="20sp"
+        android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imgSearch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_barra"
         app:layout_constraintVertical_bias="0.789"
-        tools:ignore="HardcodedText,TextContrastCheck" />
+        tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
 
     <ImageButton
         android:id="@+id/imgSearch"
@@ -205,10 +205,11 @@
         android:backgroundTint="#969FAA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgCalendar"
         app:layout_constraintTop_toBottomOf="@+id/top_barra"
-        app:layout_constraintVertical_bias="0.789"
+        app:layout_constraintVertical_bias="0.799"
         app:srcCompat="@drawable/icono_arrow"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imgTasks"
@@ -220,7 +221,8 @@
         android:backgroundTint="#51E4FF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSearch"
-        app:srcCompat="@drawable/logo_tasks" />
+        app:srcCompat="@drawable/logo_tasks"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imgLists"
@@ -232,7 +234,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSearch"
-        app:srcCompat="@drawable/logo_lists" />
+        app:srcCompat="@drawable/logo_lists"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imgCalendar"
@@ -245,7 +248,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSearch"
         app:layout_constraintVertical_bias="0.518"
-        app:srcCompat="@drawable/logo_calendar" />
+        app:srcCompat="@drawable/logo_calendar"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/txtTasks"
@@ -253,7 +257,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="76sp"
         android:layout_marginBottom="29sp"
-        android:text="Tasks"
+        android:text="@string/txtTasks"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -263,7 +267,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="29sp"
-        android:text="Lists"
+        android:text="@string/txtLists"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -275,7 +279,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="67sp"
         android:layout_marginBottom="29sp"
-        android:text="Calendar"
+        android:text="@string/txtCalendar"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

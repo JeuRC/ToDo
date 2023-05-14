@@ -35,7 +35,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/boton_redondo"
         android:backgroundTint="#51E4FF"
-        android:text="&#183;&#183;&#183;"
+        android:text="@string/btnProfile"
         android:textSize="12sp"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +46,7 @@
         android:id="@+id/txtTeams"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calendar"
+        android:text="@string/txtCalendar"
         android:textSize="30sp"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/top_barra"
@@ -75,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10sp"
                 android:background="#51E4FF"
-                android:text="Today, Wednesday, March 1st"
+                android:text="@string/txtCalendar1"
                 android:textColor="#637E95"
                 android:textSize="21sp"
                 tools:ignore="TextContrastCheck" />
@@ -97,7 +97,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="5sp"
-                        android:text="02:00 PM"
+                        android:text="@string/txtHour1"
                         android:textColor="@color/black"
                         android:textSize="17sp" />
 
@@ -105,7 +105,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="5sp"
-                        android:text="08:00 PM"
+                        android:text="@string/txtHour2"
                         android:textColor="@color/black"
                         android:textSize="17sp" />
                 </LinearLayout>
@@ -125,7 +125,7 @@
                         android:id="@+id/cbxTasks1"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Go to bank"
+                        android:text="@string/cbxCalendar1"
                         android:textSize="17sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -136,7 +136,7 @@
                         android:id="@+id/cbxTasks2"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Make dinner"
+                        android:text="@string/cbxCalendar2"
                         android:textSize="17sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -151,7 +151,7 @@
                 android:layout_marginTop="10sp"
                 android:layout_marginBottom="10sp"
                 android:background="#51E4FF"
-                android:text="Tomorrow, Thursday, March 2nd"
+                android:text="@string/txtCalendar2"
                 android:textColor="#637E95"
                 android:textSize="21sp"
                 tools:ignore="TextContrastCheck" />
@@ -162,7 +162,7 @@
                 android:layout_marginTop="10sp"
                 android:layout_marginBottom="10sp"
                 android:background="#51E4FF"
-                android:text="Monday, March 3rd"
+                android:text="@string/txtCalendar3"
                 android:textColor="#637E95"
                 android:textSize="21sp"
                 tools:ignore="TextContrastCheck" />
@@ -184,7 +184,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="5sp"
-                        android:text="11:00 AM"
+                        android:text="@string/txtHour3"
                         android:textColor="@color/black"
                         android:textSize="17sp" />
 
@@ -192,7 +192,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="5sp"
-                        android:text="03:00 PM"
+                        android:text="@string/txtHour4"
                         android:textColor="@color/black"
                         android:textSize="17sp" />
                 </LinearLayout>
@@ -212,7 +212,7 @@
                         android:id="@+id/cbxTasks3"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Do the shopping"
+                        android:text="@string/cbxCalendar3"
                         android:textSize="17sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -223,7 +223,7 @@
                         android:id="@+id/cbxTasks4"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Make the report"
+                        android:text="@string/cbxCalendar4"
                         android:textSize="17sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -249,7 +249,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="5sp"
-                        android:text="05:00 PM"
+                        android:text="@string/txtHour5"
                         android:textColor="@color/black"
                         android:textSize="17sp" />
 
@@ -270,7 +270,7 @@
                         android:id="@+id/txtTasks1"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Work meeting"
+                        android:text="@string/txtCalendar4"
                         android:textColor="@color/white"
                         android:paddingStart="10sp"
                         android:textSize="21sp"
@@ -278,13 +278,13 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        tools:ignore="RtlSymmetry,TouchTargetSizeCheck" />
 
                     <TextView
                         android:id="@+id/txtTasks2"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Project progress"
+                        android:text="@string/txtCalendar5"
                         android:textColor="@color/white"
                         android:paddingStart="10sp"
                         android:textSize="17sp"
@@ -292,7 +292,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        tools:ignore="RtlSymmetry,TouchTargetSizeCheck" />
                 </LinearLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -302,7 +302,7 @@
                 android:layout_marginTop="10sp"
                 android:layout_marginBottom="10sp"
                 android:background="#51E4FF"
-                android:text="Wednesday, March 8th"
+                android:text="@string/txtCalendar6"
                 android:textColor="#637E95"
                 android:textSize="21sp"
                 tools:ignore="TextContrastCheck" />
@@ -310,25 +310,6 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20sp"
-                    android:orientation="vertical"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingBottom="5sp"
-                        android:text="05:00 PM"
-                        android:textColor="@color/black"
-                        android:textSize="17sp" />
-
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -345,7 +326,7 @@
                         android:id="@+id/txtTasks3"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Women's Day"
+                        android:text="@string/txtCalendar7"
                         android:textColor="@color/white"
                         android:paddingStart="10sp"
                         android:textSize="21sp"
@@ -353,7 +334,7 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        tools:ignore="RtlSymmetry,TouchTargetSizeCheck" />
 
                 </LinearLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -364,7 +345,7 @@
                 android:layout_marginTop="10sp"
                 android:layout_marginBottom="10sp"
                 android:background="#51E4FF"
-                android:text="Sunday, March 24th"
+                android:text="@string/txtCalendar8"
                 android:textColor="#637E95"
                 android:textSize="21sp"
                 tools:ignore="TextContrastCheck" />
@@ -386,7 +367,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingBottom="5sp"
-                        android:text="02:00 PM"
+                        android:text="@string/txtHour6"
                         android:textColor="@color/black"
                         android:textSize="17sp" />
 
@@ -407,7 +388,7 @@
                         android:id="@+id/txtTasks4"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Conference"
+                        android:text="@string/txtCalendar9"
                         android:textColor="@color/white"
                         android:paddingStart="10sp"
                         android:textSize="21sp"
@@ -415,13 +396,13 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        tools:ignore="RtlSymmetry,TouchTargetSizeCheck" />
 
                     <TextView
                         android:id="@+id/txtTasks5"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Presentation"
+                        android:text="@string/txtCalendar10"
                         android:textColor="@color/white"
                         android:paddingStart="10sp"
                         android:textSize="17sp"
@@ -429,7 +410,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        tools:ignore="RtlSymmetry,TouchTargetSizeCheck" />
                 </LinearLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
@@ -442,34 +423,33 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/boton_redondo"
         android:backgroundTint="@color/white"
-
-        android:text="&#43;"
+        android:paddingBottom="1sp"
+        android:text="@string/btnAdd"
         android:textColor="@color/black"
         android:textSize="50sp"
-        android:paddingBottom="1sp"
         app:layout_constraintBottom_toTopOf="@+id/btnSearch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_barra"
         app:layout_constraintVertical_bias="0.97"
-        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck" />
+        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,TextContrastCheck,TextSizeCheck" />
 
     <Button
         android:id="@+id/btnSearch"
-        android:layout_width="340sp"
+        android:layout_width="320sp"
         android:layout_height="wrap_content"
         android:background="@drawable/boton_ovalado"
         android:backgroundTint="#54969FAA"
-        android:paddingRight="260sp"
-        android:text="Search"
+        android:paddingEnd="250sp"
+        android:text="@string/btnSearch"
         android:textAllCaps="false"
         android:textColor="#969FAA"
-        android:textSize="20sp"
+        android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imgSearch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_barra"
         app:layout_constraintVertical_bias="0.789"
-        tools:ignore="HardcodedText,TextContrastCheck" />
+        tools:ignore="HardcodedText,RtlSymmetry,TextContrastCheck" />
 
     <ImageButton
         android:id="@+id/imgSearch"
@@ -484,7 +464,7 @@
         app:layout_constraintTop_toBottomOf="@+id/top_barra"
         app:layout_constraintVertical_bias="0.799"
         app:srcCompat="@drawable/icono_arrow"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imgTasks"
@@ -496,7 +476,8 @@
         android:backgroundTint="#51E4FF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSearch"
-        app:srcCompat="@drawable/logo_tasks" />
+        app:srcCompat="@drawable/logo_tasks"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imgLists"
@@ -508,7 +489,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSearch"
-        app:srcCompat="@drawable/logo_lists" />
+        app:srcCompat="@drawable/logo_lists"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imgCalendar"
@@ -521,7 +503,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSearch"
         app:layout_constraintVertical_bias="0.518"
-        app:srcCompat="@drawable/logo_calendar" />
+        app:srcCompat="@drawable/logo_calendar"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/txtTasks"
@@ -529,7 +512,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="76sp"
         android:layout_marginBottom="29sp"
-        android:text="Tasks"
+        android:text="@string/txtTasks"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -539,7 +522,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="29sp"
-        android:text="Lists"
+        android:text="@string/txtLists"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -551,7 +534,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="67sp"
         android:layout_marginBottom="29sp"
-        android:text="Calendar"
+        android:text="@string/txtCalendar"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

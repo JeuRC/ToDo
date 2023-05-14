@@ -39,7 +39,7 @@
     <string name="change_email_ToDo">Change Email</string>
     <string name="change_password_ToDo">Change Password</string>
     <string name="recover_password_ToDo">Recover Password</string>
-    <string name="btnLagout">Lagout</string>
+    <string name="btnLogout">Logout</string>
     <string name="txtUsername">Brendan Moore</string>
     <string name="txtEmailHidden">****************@*****.com</string>
     <string name="txtPasswordHidden">*************</string>
@@ -88,10 +88,9 @@
     <string name="txtCalendar4">Work meeting</string>
     <string name="txtCalendar5">Project progress</string>
     <string name="txtCalendar6">Wednesday, March 8th</string>
-    <string name="txtHour6">05:00 PM</string>
+    <string name="txtHour6">04:00 PM</string>
     <string name="txtCalendar7">Women\'s Day</string>
     <string name="txtCalendar8">Sunday, March 24th</string>
-    <string name="txtHour7">02:00 PM</string>
     <string name="txtCalendar9">Conference</string>
     <string name="txtCalendar10">Presentation</string>
     <string name="txtCalendar11">Tuesday, March 26th</string>
