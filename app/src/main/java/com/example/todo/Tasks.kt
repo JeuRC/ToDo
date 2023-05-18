@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
@@ -31,42 +30,42 @@ class Tasks : AppCompatActivity() {
         val imgCalendar = findViewById<ImageView>(R.id.imgCalendar)
         val txtCalendar = findViewById<TextView>(R.id.txtCalendar)
         imgIcon.setOnClickListener{
-            val intent: Intent = Intent(this, Home::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
         btnProfile.setOnClickListener{
-            val intent: Intent = Intent(this, Profile::class.java)
+            val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
         imgPlus1.setOnClickListener{
-            val intent: Intent = Intent(this, AddTasks::class.java)
+            val intent = Intent(this, AddTasks::class.java)
             startActivity(intent)
         }
         imgLists.setOnClickListener{
-            val intent: Intent = Intent(this, Lists::class.java)
+            val intent = Intent(this, Lists::class.java)
             startActivity(intent)
         }
         txtLists.setOnClickListener{
-            val intent: Intent = Intent(this, Lists::class.java)
+            val intent = Intent(this, Lists::class.java)
             startActivity(intent)
         }
         imgCalendar.setOnClickListener{
-            val intent: Intent = Intent(this, Calendar::class.java)
+            val intent = Intent(this, Calendar::class.java)
             startActivity(intent)
         }
         txtCalendar.setOnClickListener{
-            val intent: Intent = Intent(this, Calendar::class.java)
+            val intent = Intent(this, Calendar::class.java)
             startActivity(intent)
         }
         loadTasks()
         rvwTaskToday()
 
     }
-    fun rvwTaskToday(){
+    private fun rvwTaskToday(){
         val task = intent.getStringExtra("task")
-        if (task != null && task.isNotEmpty()) {
-            val dato = Task(task.toString())
-            taskList.add(dato)
+        if (!task.isNullOrEmpty()) {
+            val data = Task(task.toString())
+            taskList.add(data)
         }
         saveTasks()
         val recyclerView = findViewById<RecyclerView>(R.id.rvwTaskToday)

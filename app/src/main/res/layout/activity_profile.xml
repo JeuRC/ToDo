@@ -28,14 +28,14 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/btnLagout"
+        android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10sp"
         android:layout_marginEnd="10sp"
         android:background="@drawable/boton_ovalado"
         android:backgroundTint="#51E4FF"
-        android:text="@string/btnLagout"
+        android:text="@string/btnLogout"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -49,8 +49,9 @@
         android:layout_height="170sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLagout"
-        app:srcCompat="@drawable/iconop" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLogout"
+        app:srcCompat="@drawable/iconop"
+        tools:ignore="ContentDescription" />
 
     <ImageButton
         android:id="@+id/imgPicture"
@@ -62,7 +63,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgLogo"
         app:srcCompat="@drawable/icono_usuario"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/txtName"
@@ -73,7 +74,8 @@
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgPicture" />
+        app:layout_constraintTop_toBottomOf="@+id/imgPicture"
+        tools:ignore="TextContrastCheck" />
 
     <ImageButton
         android:id="@+id/imgEdit1"
@@ -85,29 +87,31 @@
         app:layout_constraintStart_toEndOf="@+id/txtName"
         app:layout_constraintTop_toBottomOf="@+id/imgPicture"
         app:srcCompat="@drawable/icono_edit"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/txtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="70sp"
         android:text="@string/enter_email"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:layout_marginStart="70sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/txtEmail_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="70sp"
         android:text="@string/txtEmailHidden"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:layout_marginEnd="70sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
+        tools:ignore="TextContrastCheck" />
 
     <ImageButton
         android:id="@+id/imgEdit2"
@@ -119,7 +123,7 @@
         app:layout_constraintStart_toEndOf="@+id/txtEmail_address"
         app:layout_constraintTop_toBottomOf="@+id/txtName"
         app:srcCompat="@drawable/icono_edit"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/txtPassword"
@@ -130,18 +134,20 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/txtCharacters"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="70sp"
-        android:textColor="@color/white"
         android:text="@string/txtPasswordHidden"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEmail_address" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail_address"
+        tools:ignore="TextContrastCheck" />
 
     <ImageButton
         android:id="@+id/imgEdit3"
@@ -153,6 +159,6 @@
         app:layout_constraintStart_toEndOf="@+id/txtCharacters"
         app:layout_constraintTop_toBottomOf="@+id/txtEmail_address"
         app:srcCompat="@drawable/icono_edit"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

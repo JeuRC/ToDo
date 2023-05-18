@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".Login">
 
     <View
         android:id="@+id/top_barra"
@@ -32,7 +32,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="?attr/homeAsUpIndicator" />
+        app:srcCompat="?attr/homeAsUpIndicator"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/iconop"
@@ -76,7 +77,8 @@
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/top_barra"
-        app:layout_constraintVertical_bias="0.983" />
+        app:layout_constraintVertical_bias="0.983"
+        tools:ignore="VisualLintOverlap" />
 
     <EditText
         android:id="@+id/password_ToDo_2"
@@ -84,7 +86,7 @@
         android:layout_height="50dp"
         android:autofillHints="name user"
         android:hint="@string/enter_contraseñap_hint"
-        android:inputType="text"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
@@ -98,7 +100,7 @@
         android:layout_height="50dp"
         android:autofillHints="name user"
         android:hint="@string/enter_repeat_password"
-        android:inputType="text"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
@@ -117,7 +119,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.671" />
+        app:layout_constraintVertical_bias="0.671"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/orp"
@@ -156,6 +159,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.916" />
+        app:layout_constraintVertical_bias="0.916"
+        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

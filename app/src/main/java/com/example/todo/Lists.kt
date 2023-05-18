@@ -20,27 +20,27 @@ class Lists : AppCompatActivity() {
         val txtCalendar = findViewById<TextView>(R.id.txtCalendar)
 
         imgIcon.setOnClickListener{
-            val intent: Intent = Intent(this, Home::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
         btnProfile.setOnClickListener{
-            val intent: Intent = Intent(this, Profile::class.java)
+            val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
         imgTasks.setOnClickListener{
-            val intent: Intent = Intent(this, Tasks::class.java)
+            val intent = Intent(this, Tasks::class.java)
             startActivity(intent)
         }
         txtTasks.setOnClickListener{
-            val intent: Intent = Intent(this, Tasks::class.java)
+            val intent = Intent(this, Tasks::class.java)
             startActivity(intent)
         }
         imgCalendar.setOnClickListener{
-            val intent: Intent = Intent(this, Calendar::class.java)
+            val intent = Intent(this, Calendar::class.java)
             startActivity(intent)
         }
         txtCalendar.setOnClickListener{
-            val intent: Intent = Intent(this, Calendar::class.java)
+            val intent = Intent(this, Calendar::class.java)
             startActivity(intent)
         }
     }

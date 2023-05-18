@@ -6,20 +6,20 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 
-class Login_ToDo_P : AppCompatActivity() {
+class RecoverPassword : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login_to_do_p)
+        setContentView(R.layout.activity_recover_password)
 
-        val retroceder4 = findViewById<ImageButton>(R.id.retroceder4)
+        val back = findViewById<ImageButton>(R.id.retroceder)
         val send1 = findViewById<Button>(R.id.send1)
 
-        retroceder4.setOnClickListener{
-            val intent: Intent = Intent(this, Profile::class.java)
+        back.setOnClickListener{
+            val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
         send1.setOnClickListener{
-            val intent: Intent = Intent(this, Profile::class.java)
+            val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
     }

@@ -7,21 +7,21 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 
-class Login_Google_P : AppCompatActivity() {
+class LoginGoogle : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login_google_p)
+        setContentView(R.layout.activity_login_google)
 
-        val retroceder = findViewById<ImageButton>(R.id.retroceder)
-        val continue_google = findViewById<Button>(R.id.continue_google)
+        val back = findViewById<ImageButton>(R.id.retroceder)
+        val continua = findViewById<Button>(R.id.continue_google)
 
-        retroceder.setOnClickListener{
-            val intent: Intent = Intent(this, MainActivity::class.java)
+        back.setOnClickListener{
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
-        continue_google.setOnClickListener{
-            val intent: Intent = Intent(this, Home::class.java)
+        continua.setOnClickListener{
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
     }

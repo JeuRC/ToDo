@@ -20,27 +20,27 @@ class Teams : AppCompatActivity() {
         val txtLists = findViewById<TextView>(R.id.txtLists)
 
         imgIcon.setOnClickListener{
-            val intent: Intent = Intent(this, Home::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
         btnProfile.setOnClickListener{
-            val intent: Intent = Intent(this, Profile::class.java)
+            val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
         imgTasks.setOnClickListener{
-            val intent: Intent = Intent(this, Tasks::class.java)
+            val intent = Intent(this, Tasks::class.java)
             startActivity(intent)
         }
         txtTasks.setOnClickListener{
-            val intent: Intent = Intent(this, Tasks::class.java)
+            val intent = Intent(this, Tasks::class.java)
             startActivity(intent)
         }
         imgLists.setOnClickListener{
-            val intent: Intent = Intent(this, Lists::class.java)
+            val intent = Intent(this, Lists::class.java)
             startActivity(intent)
         }
         txtLists.setOnClickListener{
-            val intent: Intent = Intent(this, Lists::class.java)
+            val intent = Intent(this, Lists::class.java)
             startActivity(intent)
         }
     }

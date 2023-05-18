@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".Login">
 
     <View
         android:id="@+id/top_barra"
@@ -17,10 +17,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/login_p_facebook"
+        android:id="@+id/login_sign_facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_login_facebook"
+        android:text="@string/sign_facebook"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,7 +59,8 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.255" />
+        app:layout_constraintVertical_bias="0.255"
+        tools:ignore="ImageContrastCheck" />
 
 
     <TextView
@@ -81,16 +82,17 @@
         android:id="@+id/loginAppFacebook"
         android:layout_width="144dp"
         android:layout_height="69dp"
-        android:maxLines="2"
         android:ellipsize="end"
         android:gravity="center"
+        android:maxLines="2"
         android:text="@string/loginapp_profile"
         android:textColor="@color/md_grey_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/top_barra"
-        app:layout_constraintVertical_bias="0.539" />
+        app:layout_constraintVertical_bias="0.539"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/learnMore"
@@ -149,7 +151,8 @@
         app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/top_barra"
-        app:layout_constraintVertical_bias="0.877" />
+        app:layout_constraintVertical_bias="0.877"
+        tools:ignore="TextSizeCheck" />
 
     <ImageView
         android:id="@+id/candadoFacebook"

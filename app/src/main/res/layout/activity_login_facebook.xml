@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".Login">
 
     <View
         android:id="@+id/top_barra"
@@ -17,10 +17,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/login_sign_facebook"
+        android:id="@+id/login_p_facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_facebook"
+        android:text="@string/button_login_facebook"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"

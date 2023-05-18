@@ -4,28 +4,27 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
 
-class Recover_Login_ToDo : AppCompatActivity() {
+class SignIn : AppCompatActivity() {
 
-    var username2: EditText?=null
-    var email2: EditText?=null
-    var password_ToDo_2: EditText?=null
-    var repeat_password: EditText?=null
+    private var username2: EditText?=null
+    private var email2: EditText?=null
+    private var password_ToDo_2: EditText?=null
+    private var repeat_password: EditText?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_recover_login_to_do)
+        setContentView(R.layout.activity_sign_in)
 
         username2=findViewById(R.id.username2)
         email2=findViewById(R.id.email2)
         password_ToDo_2=findViewById(R.id.password_ToDo_2)
         repeat_password=findViewById(R.id.repeat_password)
 
-        val retroceder = findViewById<ImageButton>(R.id.retroceder)
+        val back = findViewById<ImageButton>(R.id.retroceder)
         val login1 = findViewById<Button>(R.id.login1)
         val username2=findViewById<EditText>(R.id.username2)
         val email2=findViewById<EditText>(R.id.email2)
@@ -34,18 +33,18 @@ class Recover_Login_ToDo : AppCompatActivity() {
         val login_facebook = findViewById<Button>(R.id.login_facebook)
         val login_google = findViewById<Button>(R.id.login_google)
 
-        retroceder.setOnClickListener{
-            val intent: Intent = Intent(this, MainActivity::class.java)
+        back.setOnClickListener{
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
 
         login_facebook.setOnClickListener{
-            val intent: Intent = Intent(this, Login_Sign_Facebook::class.java)
+            val intent = Intent(this, SignInFacebook::class.java)
             startActivity(intent)
         }
 
         login_google.setOnClickListener{
-            val intent: Intent = Intent(this, Login_Sign_Google::class.java)
+            val intent = Intent(this, SignInGoogle::class.java)
             startActivity(intent)
         }
 
@@ -70,7 +69,7 @@ class Recover_Login_ToDo : AppCompatActivity() {
             }
         }
     }
-    private fun guardar (){
+    private fun save (){
         val prefuser = getSharedPreferences(username2?.text.toString(), Context.MODE_PRIVATE)
         val prefemail = getSharedPreferences(email2?.text.toString(), Context.MODE_PRIVATE)
         val editor1 = prefuser.edit()
@@ -90,7 +89,7 @@ class Recover_Login_ToDo : AppCompatActivity() {
         val password1=prefuser.getString("Password", "")
         val password2=prefemail.getString("Password", "")
         if(password1==password_ToDo_2?.text.toString() || password2==password_ToDo_2?.text.toString()){
-            val login=Intent(this,MainActivity::class.java)
+            val login=Intent(this,Login::class.java)
             startActivity(login)
             Toast.makeText(this,"You have successfully registered", Toast.LENGTH_LONG).show()
         } else{
@@ -105,7 +104,7 @@ class Recover_Login_ToDo : AppCompatActivity() {
         val password=getSharedPreferences(password_ToDo_2?.text.toString(), Context.MODE_PRIVATE)
         val repeatPassword=getSharedPreferences(repeat_password?.text.toString(), Context.MODE_PRIVATE)
         if (password==repeatPassword){
-            guardar()
+            save()
             irLogin()
         }else{
             Toast.makeText(this,"Password does not match", Toast.LENGTH_LONG).show()

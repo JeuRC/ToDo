@@ -36,37 +36,34 @@
             android:name=".Home"
             android:exported="false" />
         <activity
-            android:name=".Login_Sign_Google"
+            android:name=".SignInGoogle"
             android:exported="false" />
         <activity
-            android:name=".Login_Sign_Facebook"
+            android:name=".SignInFacebook"
             android:exported="false" />
         <activity
-            android:name=".Login_Email_ToDo"
+            android:name=".ChangeUsername"
             android:exported="false" />
         <activity
-            android:name=".Recover_Login_ToDo"
+            android:name=".SignIn"
             android:exported="false" />
         <activity
-            android:name=".Recover_Password_ToDo"
+            android:name=".RecoverPassword"
             android:exported="false" />
         <activity
-            android:name=".New_Password_ToDo"
+            android:name=".ChangePassword"
             android:exported="false" />
         <activity
-            android:name=".Login_ToDo_P"
+            android:name=".ChangeEmail"
             android:exported="false" />
         <activity
-            android:name=".Login_Google_P"
+            android:name=".LoginGoogle"
             android:exported="false" />
         <activity
-            android:name=".Login_Facebook_P"
+            android:name=".LoginFacebook"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Login"
             android:exported="true"
             android:theme="@style/Theme.App.Starting">
             <intent-filter>
