@@ -17,12 +17,7 @@ Las funcionalidades de mi aplicacion **ToDo** son:
 - Agregar tareas: Permitir al usuario agregar nuevas tareas a una lista existente con un título, descripción y fecha de vencimiento.
 - Marcar tareas como completadas: Permitir al usuario marcar tareas como completadas cuando hayan sido realizadas.
 - Ordenar tareas: Permitir al usuario ordenar las tareas de acuerdo con diferentes criterios como fecha de vencimiento, título, prioridad, entre otros.
-- Filtrar tareas: Permitir al usuario filtrar las tareas según su estado (completadas o pendientes), fecha de vencimiento, etiquetas o cualquier otro criterio relevante.
 - Establecer prioridades: Permitir al usuario establecer una prioridad para cada tarea, para poder organizar y realizar las tareas más importantes primero.
-- Notificaciones: Notificar al usuario cuando una tarea está cerca de su fecha de vencimiento o ha sido marcada como completada.
-- Compartir tareas: Permitir al usuario compartir tareas con otros usuarios y asignar tareas a miembros del equipo.
-- Comentarios y notas: Permitir al usuario agregar comentarios o notas a las tareas para mayor claridad o información adicional.
-- Integración con otras herramientas: Permitir la integración del calendario de Google, para facilitar la organización y gestión de las tareas.
 ## Mockup
 https://marvelapp.com/prototype/j9b64a1
 ## Integrantes
