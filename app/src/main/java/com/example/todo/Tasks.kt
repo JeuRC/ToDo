@@ -1,5 +1,6 @@
 package com.example.todo
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -13,22 +14,25 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
+
 private val taskList= mutableListOf<Task>()
 
 
 class Tasks : AppCompatActivity() {
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tasks)
 
         val imgIcon = findViewById<ImageView>(R.id.imgIcon)
         val btnProfile = findViewById<Button>(R.id.btnProfile)
-        val imgPlus1 = findViewById<ImageButton>(R.id.imgPlus1)
+        val btnAddTasks = findViewById<ImageButton>(R.id.btnAddTasks)
         val imgLists = findViewById<ImageView>(R.id.imgLists)
         val txtLists = findViewById<TextView>(R.id.txtLists)
         val imgCalendar = findViewById<ImageView>(R.id.imgCalendar)
         val txtCalendar = findViewById<TextView>(R.id.txtCalendar)
+
         imgIcon.setOnClickListener{
             val intent = Intent(this, Home::class.java)
             startActivity(intent)
@@ -37,7 +41,7 @@ class Tasks : AppCompatActivity() {
             val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
-        imgPlus1.setOnClickListener{
+        btnAddTasks.setOnClickListener{
             val intent = Intent(this, AddTasks::class.java)
             startActivity(intent)
         }
@@ -59,8 +63,8 @@ class Tasks : AppCompatActivity() {
         }
         loadTasks()
         rvwTaskToday()
-
     }
+
     private fun rvwTaskToday(){
         val task = intent.getStringExtra("task")
         if (!task.isNullOrEmpty()) {

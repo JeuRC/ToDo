@@ -89,7 +89,15 @@ class SignIn : AppCompatActivity() {
         val password1=prefuser.getString("Password", "")
         val password2=prefemail.getString("Password", "")
         if(password1==password_ToDo_2?.text.toString() || password2==password_ToDo_2?.text.toString()){
-            val login=Intent(this,Login::class.java)
+            val login=Intent(this,Login::class.java).apply {
+                val username = findViewById<EditText>(R.id.username2).text.toString()
+                val email = findViewById<EditText>(R.id.email2).text.toString()
+                val password = findViewById<EditText>(R.id.password_ToDo_2).text.toString()
+
+                putExtra("username", username)
+                putExtra("email", email)
+                putExtra("password", password)
+            }
             startActivity(login)
             Toast.makeText(this,"You have successfully registered", Toast.LENGTH_LONG).show()
         } else{

@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -47,6 +48,7 @@ class Login : AppCompatActivity() {
                         val intent = Intent(this, Home::class.java)
                         startActivity(intent)
                         Toast.makeText(this,"You have successfully logged in", Toast.LENGTH_LONG).show()
+                        data()
                     } else{
                         Toast.makeText(this,"Unregistered user", Toast.LENGTH_LONG).show()
                     }
@@ -74,5 +76,18 @@ class Login : AppCompatActivity() {
             val intent = Intent(this, LoginGoogle::class.java)
             startActivity(intent)
         }
+    }
+
+    private fun data() {
+        val bundle = intent.extras
+        val username = bundle?.getString("username")
+        val email = bundle?.getString("email")
+        val password = bundle?.getString("password")
+
+        val prefs = getSharedPreferences(getString(R.string.enter_username), Context.MODE_PRIVATE).edit()
+        prefs.putString("username", username)
+        prefs.putString("email", email)
+        prefs.putString("password", password)
+        prefs.apply()
     }
 }
