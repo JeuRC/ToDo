@@ -1,11 +1,13 @@
 package com.example.todo
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import com.google.firebase.auth.FirebaseAuth
 
 class Profile : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -24,6 +26,11 @@ class Profile : AppCompatActivity() {
             startActivity(intent)
         }
         btnLogout.setOnClickListener{
+            val prefs = getSharedPreferences(getString(R.string.title_home), Context.MODE_PRIVATE).edit()
+            prefs.clear()
+            prefs.apply()
+
+            FirebaseAuth.getInstance().signOut()
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }

@@ -1,5 +1,6 @@
 package com.example.todo
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -58,5 +59,18 @@ class Home : AppCompatActivity() {
             val intent = Intent(this, Teams::class.java)
             startActivity(intent)
         }
+
+        saveData()
+    }
+
+    private fun saveData() {
+        val bundle = intent.extras
+        val email = bundle?.getString("email")
+        val password = bundle?.getString("password")
+
+        val prefs = getSharedPreferences(getString(R.string.title_home), Context.MODE_PRIVATE).edit()
+        prefs.putString("email", email)
+        prefs.putString("password", password)
+        prefs.apply()
     }
 }
