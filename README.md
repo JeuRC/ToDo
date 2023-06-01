@@ -2,7 +2,6 @@
 
 ![ToDo2](https://user-images.githubusercontent.com/90876062/232974613-69d8de40-8abb-4091-8b01-7b66d4dfa5f8.png)
 
-
 <a href="https://github.com/JeuRC/ToDo/search?l=kotlin"><img src="https://img.shields.io/github/languages/count/JeuRC/ToDo?style=plastic" /></a>
 <a href="https://github.com/JeuRC/ToDo/search?l=kotlin"><img src="https://img.shields.io/github/languages/top/JeuRC/ToDo?style=plastic" /></a>
 <a href="https://github.com/JeuRC/ToDo/tree/main/app"><img src="https://img.shields.io/github/languages/code-size/JeuRC/ToDo?style=plastic" /></a>
@@ -21,6 +20,7 @@
 <a href="https://github.com/JeuRC/ToDo"><img src="https://img.shields.io/github/watchers/JeuRC/ToDO?style=social" /></a>
 <a href="https://marvelapp.com/prototype/j9b64a1"><img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green" /></a>
 ## :bulb:Idea:
+![Post de Instagram Promoción App Aplicación Móvil Minimalista Amarillo Azul](https://github.com/JeuRC/ToDo/assets/90876062/37da4908-a7b8-4b94-b26b-be0e04e6b8db)
 ### Lista de tareas: una aplicación para crear y administrar una lista de tareas pendientes y marcarlas como completadas.
 #### Aplicaciones Similares:
 - Any.do
