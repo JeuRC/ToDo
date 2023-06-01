@@ -1,4 +1,4 @@
-# Aplicacion
+# Aplicación
 ![Post de Instagram Promoción App Aplicación Móvil Minimalista Amarillo Azul](https://github.com/JeuRC/ToDo/assets/90876062/37da4908-a7b8-4b94-b26b-be0e04e6b8db)
 ## Idea:
 ### Lista de tareas: una aplicación para crear y administrar una lista de tareas pendientes y marcarlas como completadas.
