@@ -8,9 +8,16 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.api.ApiException
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.GoogleAuthProvider
 
 class SignIn : AppCompatActivity() {
 
+    private val GOOGLE_SIGN_IN = 100
     private var username2: EditText?=null
     private var email2: EditText?=null
     private var password_ToDo_2: EditText?=null
@@ -44,10 +51,12 @@ class SignIn : AppCompatActivity() {
         }
 
         login_google.setOnClickListener{
-            val intent = Intent(this, SignInGoogle::class.java)
-            startActivity(intent)
+            val googleConf = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id)).requestEmail().build()
+            val googleClient = GoogleSignIn.getClient(this, googleConf)
+            googleClient.signOut()
+            startActivityForResult(googleClient.signInIntent, GOOGLE_SIGN_IN)
         }
-
         login1.setOnClickListener{
             if (username2.text.toString().isEmpty()) {
                 Toast.makeText(this,"Enter a user", Toast.LENGTH_LONG).show()
@@ -62,60 +71,79 @@ class SignIn : AppCompatActivity() {
                         Toast.makeText(this, "Repeat password", Toast.LENGTH_LONG).show()
                         }else{
                             confirmPassword()
-
                         }
                     }
                 }
             }
         }
     }
-    private fun save (){
-        val prefuser = getSharedPreferences(username2?.text.toString(), Context.MODE_PRIVATE)
-        val prefemail = getSharedPreferences(email2?.text.toString(), Context.MODE_PRIVATE)
-        val editor1 = prefuser.edit()
-        val editor2 = prefemail.edit()
-        editor1.putString("Password", password_ToDo_2?.text.toString())
-        editor1.apply()
-        editor2.putString("Password", password_ToDo_2?.text.toString())
-        editor2.apply()
-        username2?.setText("")
-        email2?.setText("")
-        password_ToDo_2?.setText("")
-        repeat_password?.setText("")
-    }
-    private fun irLogin (){
-        val prefuser=getSharedPreferences(username2?.text.toString(), Context.MODE_PRIVATE)
-        val prefemail=getSharedPreferences(email2?.text.toString(), Context.MODE_PRIVATE)
-        val password1=prefuser.getString("Password", "")
-        val password2=prefemail.getString("Password", "")
-        if(password1==password_ToDo_2?.text.toString() || password2==password_ToDo_2?.text.toString()){
-            val login=Intent(this,Login::class.java).apply {
-                val username = findViewById<EditText>(R.id.username2).text.toString()
-                val email = findViewById<EditText>(R.id.email2).text.toString()
-                val password = findViewById<EditText>(R.id.password_ToDo_2).text.toString()
 
-                putExtra("username", username)
-                putExtra("email", email)
-                putExtra("password", password)
-            }
-            startActivity(login)
-            Toast.makeText(this,"You have successfully registered", Toast.LENGTH_LONG).show()
-        } else{
-            Toast.makeText(this,"Unregistered user", Toast.LENGTH_LONG).show()
-        }
-        username2?.setText("")
-        email2?.setText("")
-        password_ToDo_2?.setText("")
-        repeat_password?.setText("")
-    }
-    private fun confirmPassword (){
+  private fun confirmPassword (){
         val password=getSharedPreferences(password_ToDo_2?.text.toString(), Context.MODE_PRIVATE)
         val repeatPassword=getSharedPreferences(repeat_password?.text.toString(), Context.MODE_PRIVATE)
         if (password==repeatPassword){
-            save()
-            irLogin()
+            signIn()
         }else{
             Toast.makeText(this,"Password does not match", Toast.LENGTH_LONG).show()
+        }
+    }
+
+    private fun signIn() {
+        val login = findViewById<Button>(R.id.login1)
+
+        val email = findViewById<EditText>(R.id.email2)
+        val password = findViewById<EditText>(R.id.password_ToDo_2)
+
+        FirebaseAuth.getInstance().createUserWithEmailAndPassword(email.text.toString(), password.text.toString())
+            .addOnCompleteListener {
+            if (it.isSuccessful){
+                showLogin(email.text.toString(), password.text.toString())
+            }else {
+                showAlert()
+            }
+        }
+    }
+
+    private fun showAlert() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage("Se ha producido un error autenticando el usuario")
+        builder.setPositiveButton("Aceptar", null)
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+    }
+
+    private fun showLogin(email: String, password: String) {
+        val intent = Intent(this, Login::class.java).apply {
+            putExtra("email", email)
+            putExtra("password", password)
+        }
+        startActivity(intent)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if(requestCode == GOOGLE_SIGN_IN) {
+            val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+            try {
+                val account = task.getResult(ApiException::class.java)
+
+                if(account != null) {
+                    val credential = GoogleAuthProvider.getCredential(account.idToken, null)
+                    val email = findViewById<EditText>(R.id.username_principal)
+                    val password = findViewById<EditText>(R.id.contraseña_principal)
+
+                    FirebaseAuth.getInstance().signInWithCredential(credential).addOnCompleteListener {
+                        if (it.isSuccessful){
+                            showLogin(email.text.toString(), password.text.toString())
+                        }else {
+                            showAlert()
+                        }
+                    }
+                }
+            }catch (e: ApiException) {
+                showAlert()
+            }
         }
     }
 }

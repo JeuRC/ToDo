@@ -6,7 +6,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="button_back_text">BotónParaRetroceder</string>
     <string name="my_image_description">ImagenIconoP</string>
-    <string name="enter_name_hint">Username or Email</string>
+    <string name="enter_name_hint">Email</string>
     <string name="enter_contraseñap_hint">Password</string>
     <string name="enter_login1">LOGIN</string>
     <string name="not_account1">You do not have an account?</string>
