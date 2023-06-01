@@ -25,4 +25,8 @@
         <item name="postSplashScreenTheme">@style/Theme.ToDo</item>
     </style>
 
+    <style name="datePikerTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorAccent">#51E4FF</item>
+
+    </style>
 </resources>

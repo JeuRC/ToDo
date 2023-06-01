@@ -108,7 +108,7 @@ class SignIn : AppCompatActivity() {
         }
     }
 
-    private fun confirmPassword (){
+  private fun confirmPassword (){
         val password=getSharedPreferences(password_ToDo_2?.text.toString(), Context.MODE_PRIVATE)
         val repeatPassword=getSharedPreferences(repeat_password?.text.toString(), Context.MODE_PRIVATE)
         if (password==repeatPassword){

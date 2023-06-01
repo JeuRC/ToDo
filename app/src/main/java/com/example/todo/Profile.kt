@@ -6,8 +6,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageButton
 import com.facebook.login.LoginManager
+import android.widget.TextView
+import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
 class Profile : AppCompatActivity() {
@@ -48,6 +51,27 @@ class Profile : AppCompatActivity() {
         imgEdit3.setOnClickListener{
             val intent = Intent(this, ChangePassword::class.java)
             startActivity(intent)
+        }
+
+        profile()
+    }
+
+    private fun profile() {
+        val prefs = getSharedPreferences(getString(R.string.enter_username), Context.MODE_PRIVATE)
+        val username = prefs.getString("username", null)
+        val email = prefs.getString("email", null)
+        val password = prefs.getString("password", null)
+
+        Toast.makeText(this,username, Toast.LENGTH_LONG).show()
+
+        if (username != null && email != null && password != null){
+            val txtName = findViewById<TextView>(R.id.txtName)
+            val txtEmail_address = findViewById<TextView>(R.id.txtEmail_address)
+            val txtCharacters = findViewById<TextView>(R.id.txtCharacters)
+
+            txtName.text = username
+            txtEmail_address.text = email
+            txtCharacters.text = password
         }
     }
 }

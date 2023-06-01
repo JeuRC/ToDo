@@ -95,6 +95,7 @@
     <string name="txtCalendar10">Presentation</string>
     <string name="txtCalendar11">Tuesday, March 26th</string>
     <string name="btnAdd">&#43;</string>
+    <string name="edTxtDpDate">Select Task due date</string>
 
 
     <string name="facebook_app_id">253252393960740</string>

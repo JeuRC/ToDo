@@ -56,12 +56,15 @@
         tools:ignore="HardcodedText" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="409dp"
         android:layout_height="480dp"
         app:layout_constraintBottom_toTopOf="@+id/btnSearch"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/top_barra"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
@@ -81,15 +84,6 @@
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     tools:ignore="TextContrastCheck" />
-                <ImageButton
-                    android:id="@+id/imgPlus1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="60sp"
-                    android:layout_marginStart="266sp"
-                    android:background="@color/white"
-                    app:srcCompat="@drawable/icono_plus"
-                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </LinearLayout>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvwTaskToday"
@@ -108,15 +102,6 @@
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     tools:ignore="TextContrastCheck" />
-                <ImageButton
-                    android:id="@+id/imgPlus2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="60sp"
-                    android:layout_marginStart="220sp"
-                    android:background="@color/white"
-                    app:srcCompat="@drawable/icono_plus"
-                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </LinearLayout>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvwTaskTomorrow"
@@ -135,15 +120,6 @@
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     tools:ignore="TextContrastCheck" />
-                <ImageButton
-                    android:id="@+id/imgPlus3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="60sp"
-                    android:layout_marginStart="273sp"
-                    android:background="@color/white"
-                    app:srcCompat="@drawable/icono_plus"
-                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </LinearLayout>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvwTaskWeek"
@@ -162,22 +138,28 @@
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     tools:ignore="TextContrastCheck" />
-                <ImageButton
-                    android:id="@+id/imgPlus4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="60sp"
-                    android:layout_marginStart="263sp"
-                    android:background="@color/white"
-                    app:srcCompat="@drawable/icono_plus"
-                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </LinearLayout>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvwTaskMonth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
-        </ScrollView>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="ADD"
+        android:backgroundTint="#51E4FF"
+        android:src="@drawable/bt_add_tasks"
+        app:layout_constraintBottom_toTopOf="@+id/btnSearch"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintTop_toBottomOf="@+id/top_barra"
+        app:layout_constraintVertical_bias="1"/>
+
     <Button
         android:id="@+id/btnSearch"
         android:layout_width="320sp"
