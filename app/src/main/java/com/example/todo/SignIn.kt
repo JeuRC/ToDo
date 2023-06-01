@@ -9,9 +9,15 @@ import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import com.facebook.CallbackManager
+import com.facebook.FacebookCallback
+import com.facebook.FacebookException
+import com.facebook.login.LoginManager
+import com.facebook.login.LoginResult
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
+import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 
@@ -22,6 +28,7 @@ class SignIn : AppCompatActivity() {
     private var email2: EditText?=null
     private var password_ToDo_2: EditText?=null
     private var repeat_password: EditText?=null
+    private val callbackManager = CallbackManager.Factory.create()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
@@ -46,8 +53,31 @@ class SignIn : AppCompatActivity() {
         }
 
         login_facebook.setOnClickListener{
-            val intent = Intent(this, SignInFacebook::class.java)
-            startActivity(intent)
+            LoginManager.getInstance().logInWithReadPermissions(this, listOf("email"))
+            LoginManager.getInstance().registerCallback(callbackManager,
+                object : FacebookCallback<LoginResult> {
+                    override fun onSuccess(result: LoginResult) {
+                        result?.let {
+                            val token = it.accessToken
+                            val email = findViewById<EditText>(R.id.username_principal)
+                            val password = findViewById<EditText>(R.id.contraseña_principal)
+                            val credential = FacebookAuthProvider.getCredential(token.token)
+                            FirebaseAuth.getInstance().signInWithCredential(credential).addOnCompleteListener {
+                                if (it.isSuccessful){
+                                    showLogin(email.text.toString(), password.text.toString())
+                                }   else {
+                                    showAlert() }
+                            }
+
+                        }
+                    }
+                    override fun onCancel() {
+                    }
+                    override fun onError(error: FacebookException) {
+                        showAlert()
+                    }
+
+                })
         }
 
         login_google.setOnClickListener{
