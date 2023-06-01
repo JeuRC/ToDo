@@ -7,12 +7,12 @@
 - Lista de Tareas
 - Organizador
 ## Colores
-- Aplicacion: #51E4FF
+- Aplicación: #51E4FF
 - Facebook: #3B5998
 - Google: #DB4A39
 - Links: #0645AD
 ## Funcionalidades
-Las funcionalidades de mi aplicacion **ToDo** son:
+Las funcionalidades de mi aplicación **ToDo** son:
 - Crear una lista de tareas: Permitir al usuario crear una nueva lista de tareas con un nombre y una descripción opcional.
 - Agregar tareas: Permitir al usuario agregar nuevas tareas a una lista existente con un título, descripción y fecha de vencimiento.
 - Marcar tareas como completadas: Permitir al usuario marcar tareas como completadas cuando hayan sido realizadas.
