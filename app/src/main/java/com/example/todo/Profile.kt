@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import com.facebook.login.LoginManager
 import com.google.firebase.auth.FirebaseAuth
 
 class Profile : AppCompatActivity() {
@@ -29,6 +30,8 @@ class Profile : AppCompatActivity() {
             val prefs = getSharedPreferences(getString(R.string.title_home), Context.MODE_PRIVATE).edit()
             prefs.clear()
             prefs.apply()
+
+            LoginManager.getInstance().logOut()
 
             FirebaseAuth.getInstance().signOut()
             val intent = Intent(this, Login::class.java)

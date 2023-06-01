@@ -95,4 +95,10 @@
     <string name="txtCalendar10">Presentation</string>
     <string name="txtCalendar11">Tuesday, March 26th</string>
     <string name="btnAdd">&#43;</string>
+
+
+    <string name="facebook_app_id">253252393960740</string>
+    <string name="fb_login_protocol_scheme">fb1aee59213afcd52a1565c01b9e283a29</string>
+    <string name="facebook_client_token">7e47cd7921ac947200fb2fbe70e39f52</string>
+
 </resources>

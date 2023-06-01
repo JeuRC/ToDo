@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.facebook.login.LoginManager
 
 class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -74,3 +75,5 @@ class Home : AppCompatActivity() {
         prefs.apply()
     }
 }
+
+
