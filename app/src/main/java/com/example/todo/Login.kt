@@ -152,4 +152,17 @@ class Login : AppCompatActivity() {
             }
         }
     }
+
+    private fun data() {
+        val bundle = intent.extras
+        val username = bundle?.getString("username")
+        val email = bundle?.getString("email")
+        val password = bundle?.getString("password")
+
+        val prefs = getSharedPreferences(getString(R.string.enter_username), Context.MODE_PRIVATE).edit()
+        prefs.putString("username", username)
+        prefs.putString("email", email)
+        prefs.putString("password", password)
+        prefs.apply()
+    }
 }
