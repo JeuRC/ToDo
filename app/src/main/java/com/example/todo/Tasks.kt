@@ -6,6 +6,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
@@ -43,7 +44,7 @@ class Tasks : AppCompatActivity() {
         }
         btnAddTasks.setOnClickListener{
             val intent = Intent(this, AddTasks::class.java)
-            startActivity(intent)
+        startActivity(intent)
         }
         imgLists.setOnClickListener{
             val intent = Intent(this, Lists::class.java)
@@ -61,6 +62,12 @@ class Tasks : AppCompatActivity() {
             val intent = Intent(this, Calendar::class.java)
             startActivity(intent)
         }
+
+        txtCalendar.setOnClickListener {
+            val intent = Intent(this, Calendar::class.java)
+            startActivity(intent)
+        }
+
         loadTasks()
         rvwTaskToday()
     }
